@@ -5,6 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+      $( function ()
+      {
+          $( "#dropdown" ).load( "dropdown.html" );
+      } );
+      // $( function ()
+      // {
+      //     $( "#slider" ).load( "slider.html" );
+      // } );
+  </script>
+  
     <style>
         body{
             width: 90%;
@@ -59,14 +71,34 @@
         margin: auto;
        margin-top: -60px;
      }
+     #course>div>h2{
+      font-weight: lighter;
+       font-size: 22px;
+       color: rgb(160, 146, 146);
+     }
+     #course>div>h3{
+      font-weight: lighter;
+       font-size: 20px;
+       color: grey;
+     }
      .details{
-        width: 25%;
+       width: 25%;
+          
+       
+     }
+     .num{
+      display: flex;
+      align-items: center;
+      justify-content: center;
      }
      .features{
         width: 25%;
      }
      .about{
         width: 40%;
+     }
+     .about>h1{
+      font-weight: lighter;
      }
      #why_certificate{
         display: flex;
@@ -82,7 +114,10 @@
         margin: 70px;
 
      }
-     .use_of_certificate{
+     #get_certificate{
+      margin-bottom: 80px;
+     }
+     /* .use_of_certificate{
         width: 50%;
         margin: auto;
      }
@@ -112,9 +147,9 @@
         
         
 
-     }
+     } */
 
-     .use_of_certificate>div{
+     /* .use_of_certificate>div{
        
         font-size: 25px;
         color: gray;
@@ -131,7 +166,45 @@
        
         opacity: 1;
         height: auto;
+     } */
+     #how>h2{
+      text-align: center;
+      font-size: 35px;
+        font-weight:500;
+        margin: 40px;
+      
+       
      }
+     #work{
+      display: flex;
+      margin: auto;
+     }
+     .sub-work{
+      width: 30%;
+      margin: auto;
+     }
+     .sub-work>div{
+      width: 70px;
+      height: 70px;
+      background-color:#1A73E8;
+      color: white;
+      border-radius: 50%;
+      font-size: 40px;
+      
+      
+      margin: auto;
+      margin-bottom: 50px;
+      
+     }
+     .sub-work>div>p{
+      text-align: center;
+      
+     }
+     .sub-work>h3{
+        font-weight: lighter;
+        font-style: normal;
+     }
+
 
     </style>
 </head>
@@ -149,26 +222,26 @@
        <a href="">Start course</a>
     </div>
     <div>
-        <img src="https://lh3.googleusercontent.com/JwZ74w1xLAO0n24knlxgL9HZJo3NTN3V44YrtyXZvivX4sHYmiyBs89KIxTOIYTR4IDgFq-VFx6L3gutEpDkpicLzl96KKSYbVh3f08" alt="">
+        <img src="https://lh3.googleusercontent.com/JwZ74w1xLAO0n24knlxgL9HZJo3NTN3V44YrtyXZvivX4sHYmiyBs89KIxTOIYTR4IDgFq-VFx6L3gutEpDkpicLzl96KKSYbVh3f08" alt="sd">
     </div>
 </div>   
 <div  id="course">
          <div class="details">
-          <h4>COURSE DETAIL</h4>
+          <h2>COURSE DETAIL</h2>
           <h3>Modules:26</h3>
           <h3>Hours:40</h3>
           <h3>Beginner</h3>
           <h3>Free</h3>
          </div>
         <div class="features">
-          <h4>COURSE FEATURES</h4>
+          <h2>COURSE FEATURES</h2>
           <h3>Self-paced learning</h3>
           <h3>Video tutorials</h3>
           <h3>Unlimited access</h3>
           <h3>Recognised certificate</h3>
         </div>
         <div class="about">
-         <h2>About this course</h2>
+         <h1>About this course</h2>
          <h3>Master the basics of digital marketing with our free course accredited by Interactive Advertising Bureau Europe and The Open University. There are 26 modules to explore, all created by Google trainers, packed full of practical exercises and real-world examples to help you turn knowledge into action.</h3>
         </div>
  </div>
@@ -178,8 +251,9 @@
        <div class="image">
         <img src="https://lh3.googleusercontent.com/REeaiWLcRwALbGrxPRgHgZey_feHsjPUYHlmTdMqZgAVSnnvza_sJkyTm861GoUnRI16lXueSCQTToGLur-_jvaZVMka4wSoRMs2eA" alt="">
        </div>
+       <div id="dropdown"></div>
     
-      <div class="use_of_certificate">
+      <!-- <div class="use_of_certificate">
         <input type="checkbox" id="trigger">
        <label for="trigger">Improve your CV</label>
         <div>Getting a certificate shows employers that you have a clear understanding of the core concepts of digital marketing. You can also add the qualification to your CV, and easily upload it to your LinkedIn profile.</div>
@@ -187,9 +261,31 @@
         <div>Being awarded a certificate shows you have strong digital skills and that you're motivated to learn: two essential qualities in the workplace. Demonstrating these qualities can help improve your chances of finding the job you want.</div>
         <label for="trigger">Develop your career</label>
         <div>Improving your digital knowledge can help you find a job, get promoted, or start a whole new career.</div>
-      </div>
+      </div> -->
     </div>
-</div>   
+</div>  
+<div id="how">
+   <h2>How it works</h2>
+   <div id="work">
+    <div class="sub-work">
+      <div class="num"><p>1</p></div>
+      <h3>Learn new skills with our bite-sized video tutorials, then test your knowledge with a quick quiz.</h3>
+    </div> 
+    <div class="sub-work">
+      <div class="num"><p>2</p></div>
+      <h3>Pass the final 40-question exam and get certified.</h3>
+    </div>
+    <div class="sub-work">
+       <div class="num"><p>3</p></div>
+      <h3>Download and showcase your new qualification on LinkedIn and your CV.</h3>
+    </div>
+   </div>
+
+</div> 
+<div>
+
+   
+</div>
 
    
     
