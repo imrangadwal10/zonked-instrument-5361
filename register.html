@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="./components/navbar.css">
+    <link rel="stylesheet" href="./register.css">
+</head>
+<body>
+    <div id="navbar">
+        <div>
+            <img id="menu" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjd37EbTdJhO8Xzncd3nzoaf2MyfgD4FneMVqB5Mr4VUbZJ5H4vASkpFPruRq5PnkzplY&usqp=CAU" alt="">
+            <img id="logo" src="https://lh3.googleusercontent.com/kvtXWUZ756KishzmjWDgAf0AW77QeBSuLbUXDQidstlS2h63BSRrlgm4bU97NPjdF5skHZFKQufqTqGt1UbTO8VV0OB7SqXAz7qCng=-rw" alt="logo">
+            <button id="online_courses">Online Courses</button>
+            <button id="certifications">Certification</button>
+            <button id="live_training">Live Training</button>
+            <button id="remote_working">Remote Working</button>
+            <div id="morediv">
+                <div id="more">
+                    More
+                <img id="moreimg" src="https://cdn4.iconfinder.com/data/icons/ios-edge-glyph-3/25/Down-Carrot-512.png" alt="">
+                </div>
+                <div id="moreappend"></div>
+            </div>
+        </div>
+        <div>
+            <button id="signin">Sign in</button>
+            <button id="register">Register</button>
+        </div>
+    </div>
+    <div id="menudiv"></div>
+    <div id="registerbody">
+        <div>
+            <h1>Create your account</h1>
+            <p>Sign up to access Google Digital Garage free online courses</p>
+        </div>
+        <div>
+            <button><img src="https://learndigital.withgoogle.com/static/digital-workshop/assets/icons/google-button-g.png" alt=""> Register with Google</button>
+            <h3>Or continue with email</h3>
+            <input onkeyup="enterregister()" id="registeremail" type="email" placeholder="Email"><br>
+            <input onkeyup="enterregister()" id="registerpassword" type="password" placeholder="Choose a password *">
+            <img id="showpasswordreg" onclick="showpasswordreg(event)" src="https://www.pngkey.com/png/full/155-1554223_png-file-svg-crossed-eye-icon-png.png" alt=""><br>
+            <label id="label">Use 6 or more characters with a mix of letters, numbers & symbols</label><br>
+        </div>
+        <div>
+            <p>Already have an account? <a href="./signin.html">Sign in.</a></p>
+            <button id="registerr" onclick="register()" disabled>Continue</button>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>
+
+<script type="module">
+    let navbar= document.getElementById("navbar");
+    let footer= document.getElementById("footer");
+    let menu= document.getElementById("menudiv");
+
+    import {nav, menudiv, footerdata} from './components/navbar.js';
+
+    // navbar.innerHTML= nav();
+    footer.innerHTML= footerdata();
+    menu.innerHTML=  menudiv();
+</script>
+
+<script src="./register.js"></script>
+<script src="./components/navscript.js"></script>
