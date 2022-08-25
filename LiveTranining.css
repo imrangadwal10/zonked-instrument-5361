@@ -138,6 +138,14 @@
 
 }
 
+   span #checkBox{
+    height: 50px;
+    width: 18px;
+    margin-right: 20px;
+ } 
+
+
+
 .card-event__property-icon[_ngcontent-fan-c69] {
     color: #f9ab00;
     font-size: 1.8rem;
@@ -258,8 +266,3 @@ hr {
  
 }
 
-/* #checkBox{
-   
-   height: 50px;
-   /* margin: 10x; */
-/* } */ 
