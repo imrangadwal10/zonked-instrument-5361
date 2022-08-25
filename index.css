@@ -1,0 +1,66 @@
+#divone{
+    width: 70%;
+    margin: auto;
+    padding: 64px 45px;
+    display: flex;
+    margin-bottom: 0px;
+}
+#divone>div:nth-child(1){
+    margin: auto;
+    padding: 10px 45px 0px 0px;
+}
+#divone>div>h2{
+    font-size: 48px;
+    font-family: "Google Sans", Arial, sans-serif;
+    color: #3C4043;
+    font-weight: lighter;
+}
+#divone>div>p{
+    font-size: 18px;
+    font-family: Roboto, Arial, Arial, Helvetica, sans-serif;
+    color: #5f5e5e;
+    margin-top: -22px;
+    line-height: 30px;
+}
+#divone>div>button{
+    font-size: 18px;
+    font-family: "Google Sans", Arial, sans-serif;
+    color: #FFFFFF;
+    background-color: #1A73E8;
+    border: none;
+    padding: 13px 24px;
+    cursor: pointer;
+    margin-top: 12px;
+}
+#divone>div>img{
+    width: 500px;
+}
+#divtwo{
+    background-color: #FBFBFC;
+    margin: 0px 26px;
+    padding: 25px 48px;
+    width: 100%;
+    margin-left: -7px;
+    display: none;
+}
+#divtwo>div{
+    margin-left: 162px;
+}
+#divtwo>div>p{
+    font-size: 14px;
+    margin-top: 5px;
+    color: #424242;
+}
+#divtwo>div>div{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 5px;
+}
+#divtwo>div>div>img{
+    width: 82px;
+}
+#divtwo>div>div>img:nth-child(3){
+    width: 45px;
+}

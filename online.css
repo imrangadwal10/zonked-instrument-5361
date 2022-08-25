@@ -1,3 +1,4 @@
+
 #a{
     width: 100%;
     padding-bottom: 60px;
@@ -81,206 +82,207 @@ body{
     height: auto;
 }
 #filter{
-    width: 20%;
- }
- #jobs{
-     height: auto;
-     display: grid;
-     grid-template-columns: repeat(3,1fr);
-     grid-template-rows: auto;
-     gap: 27px;
-     font-family: Google Sans,Arial,sans-serif;  
- }
- #jobs>div:hover{
-     transform: scale(1.03);
-     transition: transform 0.4s;
- }
- #jobs>div{
-     width: 100%;
-     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-     font-family: Google Sans,Arial,sans-serif;
-     height: 400px;
-     cursor: pointer;
- }
- 
- #jobs>div>img{
-     width: 100%;
-     height: 40px;
- }
- #jobs>div>p{
-     color: #5f6368;
-     display: block;
-     margin-bottom: 12px;
-     cursor: pointer;
-     font-weight: 300;
-     font-stretch: normal;
-     font-size: 1.4rem;
-     line-height: 1.9rem;
-     font-family: Roboto, Arial, Helvetica, serif;
- 
- }
- #info{
-     width: 85%;
-     margin: auto;
- }
- #info>p{
-     font-size: 13px
- }
- #results{
-     margin-left: 274px;
- }
- .filters{
-     margin-top: 50px;
- }
- .filters>label{
-     font-family: Google Sans,Arial,sans-serif;
-     line-height: 3.5rem;
-     color: #80868b;
- }
- .filters>h3{
-     font-weight: 500;
-     font-stretch: normal;
-     font-size: 1.4rem;
-     line-height: 2.6rem;
-     font-family: "Google Sans", Arial, sans-serif;
-     letter-spacing: normal;
-     margin-bottom: 32px;
- }
- #fill{
-     margin-top: -20px;  
- }
- .check{
-     display: inline-block;
-     height: 16px;
-     margin: auto;
-     margin-right: 8px;
-     position: relative;
-     vertical-align: middle;
-     white-space: nowrap;
-     width: 16px;
-     flex-shrink: 0;
-     height: 20px;
-     -webkit-margin-end: 22px;
-     margin-inline-end: 22px;
-     width: 20px;
-     line-height: 2.6rem;
-     cursor: pointer;
- }
- #info>div{
-     display: flex;
- }
- #info>div>img{
+   width: 20%;
+}
+#jobs{
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 27px;
+    font-family: Google Sans,Arial,sans-serif;  
+}
+#jobs>div:hover{
+    transform: scale(1.03);
+    transition: transform 0.4s;
+}
+#jobs>div{
+    width: 100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    font-family: Google Sans,Arial,sans-serif;
+    height: 400px;
+    cursor: pointer;
+}
+
+#jobs>div>img{
+    width: 100%;
+    height: 40px;
+}
+#jobs>div>p{
+    color: #5f6368;
+    display: block;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-weight: 300;
+    font-stretch: normal;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    font-family: Roboto, Arial, Helvetica, serif;
+
+}
+#info{
+    width: 85%;
+    margin: auto;
+}
+#info>p{
+    font-size: 13px
+}
+#results{
+    margin-left: 274px;
+}
+.filters{
+    margin-top: 50px;
+}
+.filters>label{
+    font-family: Google Sans,Arial,sans-serif;
+    line-height: 3.5rem;
+    color: #80868b;
+}
+.filters>h3{
+    font-weight: 500;
+    font-stretch: normal;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    font-family: "Google Sans", Arial, sans-serif;
+    letter-spacing: normal;
+    margin-bottom: 32px;
+}
+#fill{
+    margin-top: -20px;  
+}
+.check{
+    display: inline-block;
+    height: 16px;
+    margin: auto;
+    margin-right: 8px;
+    position: relative;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 16px;
+    flex-shrink: 0;
+    height: 20px;
+    -webkit-margin-end: 22px;
+    margin-inline-end: 22px;
+    width: 20px;
+    line-height: 2.6rem;
+    cursor: pointer;
+}
+#info>div{
+    display: flex;
+}
+#info>div>img{
+   width: 7%;
+   height: 7%;
+   margin-top: 11px;
+  
+}
+#clock{
+    margin-left: 35px;
+}
+#info>div>p{
+    font-size: 13px;
+    margin-left: 5px;
+}
+#results{
+    color: #3c4043;
+    display: inline;
+    flex-basis: 100%;
+    font-size: 1.8rem;
+    line-height: 5.6rem;
+    font-weight: bold;
+}
+hr{
+  border-top: 1px solid black;
+  margin-top: 20px;
+  margin-left: -30px;
+  width: 250px;
+}
+
+
+#reset{
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+}
+#reset>img{
     width: 7%;
     height: 7%;
-    margin-top: 11px;
-   
- }
- #clock{
-     margin-left: 35px;
- }
- #info>div>p{
-     font-size: 13px;
-     margin-left: 5px;
- }
- #results{
-     color: #3c4043;
-     display: inline;
-     flex-basis: 100%;
-     font-size: 1.8rem;
-     line-height: 5.6rem;
-     font-weight: bold;
- }
- hr{
-   border-top: 1px solid black;
-   margin-top: 20px;
-   margin-left: -30px;
-   width: 250px;
- }
- 
- 
- #reset{
-     display: flex;
-     width: 100%;
-     cursor: pointer;
- }
- #reset>img{
-     width: 7%;
-     height: 7%;
-     margin-right: 10px;
-     
- }
- #reset>span{
-     color: #1a73e8;
-     font-size: 1.4rem;
-     font-weight: 500;
-     letter-spacing: .75px;
-     line-height: 2rem;
-     font-family: "Google Sans", Arial, sans-serif;
- }
- 
- 
- /* Load more Button */
- 
- #jobs{
-     flex-wrap: wrap;
-   }
-   .content{
-     margin: 20px;
-     display: none;
-   }
-   .btncontainer{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-   }
-   button{
-     border: none;
-     display: block;
-     padding: 8px 10px 8px 10px;
-     margin-bottom: 20px ;
-     cursor: pointer;
-   }
-   button:hover{
-     background-color: rgb(215, 213, 213);
-     
-   }
-    .btncontainer{
-     width: 150px;
-     margin-left: 628px;
-     font-size: 20px;
-     
+    margin-right: 10px;
     
-   }
-   .content:nth-child(1){
-     display: block;
-   }
-   .content:nth-child(2){
-     display: block;
-   }
-   .content:nth-child(3){
-     display: block;
-   }
-   .content:nth-child(4){
-     display: block;
-   }
-   .content:nth-child(5){
-     display: block;
-   }
-   .content:nth-child(6){
-     display: block;
-   }
-   .content:nth-child(7){
-     display: block;
-   }
-   .content:nth-child(8){
-     display: block;
-   }
-   .content:nth-child(9){
-     display: block;
-   }
-   .content:nth-child(10){
-     display: block;
-   }
+}
+#reset>span{
+    color: #1a73e8;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: .75px;
+    line-height: 2rem;
+    font-family: "Google Sans", Arial, sans-serif;
+}
+
+
+/* Load more Button */
+
+#jobs{
+    flex-wrap: wrap;
+  }
+  .content{
+    margin: 20px;
+    display: none;
+  }
+  .btncontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  button{
+    border: none;
+    display: block;
+    padding: 8px 10px 8px 10px;
+    margin-bottom: 20px ;
+    cursor: pointer;
+  }
+  button:hover{
+    background-color: rgb(215, 213, 213);
+    
+  }
+   .btncontainer{
+    width: 150px;
+    margin-left: 628px;
+    font-size: 20px;
+    
+   
+  }
+  .content:nth-child(1){
+    display: block;
+  }
+  .content:nth-child(2){
+    display: block;
+  }
+  .content:nth-child(3){
+    display: block;
+  }
+  .content:nth-child(4){
+    display: block;
+  }
+  .content:nth-child(5){
+    display: block;
+  }
+  .content:nth-child(6){
+    display: block;
+  }
+  .content:nth-child(7){
+    display: block;
+  }
+  .content:nth-child(8){
+    display: block;
+  }
+  .content:nth-child(9){
+    display: block;
+  }
+  .content:nth-child(10){
+    display: block;
+  }
+
+
  
- 
- 
+
