@@ -40,6 +40,22 @@
     width: 15px;
     height: 13px;
 }
+#signinmorediv{
+    border: none;
+    background: none;
+    color: #5F6368;
+    cursor: pointer;
+    font-size: 14px;
+    display: none;
+}
+#signinmorediv>div>img{
+    width: 15px;
+    height: 13px;
+}
+#signinmorediv>div>img{
+    width: 15px;
+    height: 13px;
+}
 #navbar>div:nth-child(2){
     width: 30%;
     justify-content: flex-end;
@@ -134,6 +150,26 @@
     cursor: pointer;
 }
 #moreappend>div>a:hover{
+    background-color: #e6e1e1c2;
+}
+#signinmoreappend{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    font-size: 14px;
+    position: absolute;
+    cursor: pointer;
+    margin-top: 9px;
+    margin-left: -15px;
+    color: #5F6368;
+    background-color: white;
+    display: none;
+}
+#signinmoreappend>div>a{
+    display: block;
+    padding: 19px;
+    padding-right: 80px;
+    cursor: pointer;
+}
+#signinmoreappend>div>a:hover{
     background-color: #e6e1e1c2;
 }
 #menu{
@@ -238,6 +274,7 @@
     #menudiv{
         width: 35%;
         display: none;
+        margin-top: 0px;
     }
     #navbar{
         padding: 19px;

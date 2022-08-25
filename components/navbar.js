@@ -22,9 +22,9 @@ let nav= () => {
 
 
 let menudiv= () => {
-    return `<a href="">Online Courses</a><br>
-    <a href="">Certification</a><br>
-    <a href="">Live Training</a><br>
+    return `<a href="./online.html">Online Courses</a><br>
+    <a href="./certificate.html">Certification</a><br>
+    <a href="./LiveTranining.html">Live Training</a><br>
     <a href="">Remote Working</a><br>
     <a href="">Tools & Resources</a><br>
     <a href="">Help & FAQs</a><br>
