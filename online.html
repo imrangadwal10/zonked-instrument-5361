@@ -4,30 +4,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Course</title>
-    <link rel="stylesheet" href="online.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div id="a">
-        <div id="b">
-             <div id="header">
-                 <h1>Online courses</h1>
-                 <p>Discover a range of free learning content designed to help your business or in your career. You can learn by selecting individual modules, or dive right in and take an entire course end-to-end.</p>
+       <div id="b">
+            <div id="header">
+                <h1>Online courses</h1>
+                <p>Discover a range of free learning content designed to help your business or in your career. You can learn by selecting individual modules, or dive right in and take an entire course end-to-end.</p>
+            </div>
+       </div>
+    </div>
+    <div id="mid-sec">
+             <div>
+                <div id="mfilter">
+                    <span><img src="https://cdn.iconscout.com/icon/free/png-64/filter-list-1779906-1518558.png" alt=""></span> <span>filters</span></div>
+                <div id="results">Results</div>
+                <div id="fj">
+                    <div id="filter">
+                        <div id="fill" class="filters">
+                            <h3>CATEGORIES</h3>
+                            <input class="check" id="digital" type="checkbox" name="Digital Marketing" value="Digital Marketing">
+                            <label for="Digital Marketing">Digital Marketing</label><br>
+                            <input class="check" id="Carrier" type="checkbox" name="Carrier development" value="Career development">
+                            <label for="Carrier development">Carrier Development</label><br>
+                            <input class="check" id="data" type="checkbox" name="Data" value="data">
+                            <label for="Data">Data</label><br>
+                        </div>
+                        <div class="filters">
+                            <h3>COURSE LENGTH</h3>
+                            <input class="check" id="under2" type="checkbox" name="Under 2 hours" value="2">
+                            <label for="Under 2 hours">Under 2 hours</label><br>
+                            <input class="check" id="bwtween2and10" type="checkbox" name="2-10 hours" value="">
+                            <label for="2-10 hours">2-10 hours</label><br>
+                            <input class="check" id="bwtween11and20" type="checkbox" name="11-20 hours" value="11-20 hours">
+                            <label for="11-20 hours">11-20 hours</label><br>
+                            <input class="check" id="twentyplus" type="checkbox" name="20+ hours" value="20">
+                            <label for="20+ hours">20+ hours</label><br>
+                        </div>
+                        <div class="filters">
+                            <h3>CERTIFICATION</h3>
+                            <input class="check" id="check" type="checkbox" name="Free certificate" value="Free certificate">
+                            <label for="Free certificate">Free certificate</label><br>
+                            <input class="check" id="check" type="checkbox" name="Paid certificate" value="Paid certificate">
+                            <label for="Paid certificate">Paid certificate</label><br>
+                        </div>
+                        <div class="filters">
+                            <h3>COURSE DIFFICULTY</h3>
+                            <input class="check" id="check" type="checkbox" name="Beginner" value="Beginner">
+                            <label for="Beginner">Beginner</label><br>
+                            <input class="check" id="check" type="checkbox" name="Intermediate" value="Intermediate">
+                            <label for="Intermediate">Intermediate</label><br>
+                            <input class="check" id="check" type="checkbox" name="Advanced" value="Advanced">
+                            <label for="Advanced">Advanced</label><br>
+                        </div>
+                        <div class="filters">
+                            <h3>COURSE PROVIDER</h3>
+                            <input class="check" id="google" type="checkbox" name="Google" value="google">
+                            <label for="Google">Google</label><br>
+                            <input class="check" id="ads" type="checkbox" name="Applied Digital Skills" value="applied digital skills">
+                            <label for="Applied Digital Skills">Applied Digital Skills</label><br>
+                            <input class="check" id="check" type="checkbox" name="Coursera" value="Coursera">
+                            <label for="Coursera">Coursera</label><br>
+                            <input class="check" id="check" type="checkbox" name="FutureLearn" value="FutureLearn">
+                            <label for="FutureLearn">FutureLearn</label><br>
+                            <input class="check" id="check" type="checkbox" name="Google Cloud" value="Google Cloud">
+                            <label for="Google Cloud">Google Cloud</label><br>
+                            <input class="check" id="check" type="checkbox" name="Grasshopper" value="Grasshopper">
+                            <label for="Grasshopper">Grasshopper</label><br>
+                            <input class="check" id="check" type="checkbox" name="Great Learning" value="Great Learning">
+                            <label for="Great Learning">Great Learning</label><br>
+                            <input class="check" id="check" type="checkbox" name="Monash University" value="Monash University">
+                            <label for="Monash University">Monash University</label><br>
+                            <input class="check" id="check" type="checkbox" name="National Chiao Tung University" value="National Chiao Tung University">
+                            <label for="National Chiao Tung University">National Chiao Tung University</label><br>
+                            <input class="check" id="check" type="checkbox" name="OpenClassrooms" value="OpenClassrooms">
+                            <label for="OpenClassrooms">OpenClassrooms</label><br>
+                            <input class="check" id="check" type="checkbox" name="Simplilearn" value="Simplilearn">
+                            <label for="Simplilearn">Simplilearn</label><br>
+                            <input class="check" id="check" type="checkbox" name="Skillshop" value="Skillshop">
+                            <label for="Skillshop">Skillshop</label><br>
+                            <input class="check" id="check" type="checkbox" name="The Open University" value="The Open University">
+                            <label for="The Open University">The Open University</label><br>
+                            <input class="check" id="check" type="checkbox" name="Udacity" value="Udacity">
+                            <label for="Udacity">Udacity</label><br>
+                            <input class="check" id="check" type="checkbox" name="University of Auckland" value="University of Auckland">
+                            <label for="University of Auckland">University of Auckland</label><br>
+                            <input class="check" id="check" type="checkbox" name="University of Groningen" value="University of Groningen">
+                            <label for="University of Groningen">University of Groningen</label><br>
+                            <input class="check" id="check" type="checkbox" name="University of Helsinki" value="University of Helsinki">
+                            <label for="University of Helsinki">University of Helsinki</label><br>
+                        </div>
+                        <hr>
+                        <span id="reset">
+                            <img src="https://e7.pngegg.com/pngimages/206/611/png-clipart-reload-computer-icons-patch-tor-update-button-miscellaneous-blue-thumbnail.png" alt="">
+                            <span >Reset Filters</span>
+                        </span>
+                    </div>
+                    <div id="jobs">
+                    </div>
+                    
+                </div>
+                <div class="btncontainer">
+                    <button class="btn">Load More</button>
+                </div>
              </div>
-        </div>
-     </div>
-     <div id="mid-sec">
-        <div>
-           <div id="results">Results</div>
-           <div id="fj">
-               <div id="filter">
-               </div>
-               <div id="jobs">
-                   
-               </div>
-           </div>
-        </div>
-</div>
+    </div>
 </body>
 </html>
-<script src="online.js"></script>
+<script src="index.js"></script>
