@@ -5,9 +5,116 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="online.css">
+    <link rel="stylesheet" href="./components/navbar.css">
 </head>
 <body>
+    <div id="navbar">
+        <div>
+            <img id="menu" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjd37EbTdJhO8Xzncd3nzoaf2MyfgD4FneMVqB5Mr4VUbZJ5H4vASkpFPruRq5PnkzplY&usqp=CAU" alt="">
+            <img id="logo" src="https://lh3.googleusercontent.com/kvtXWUZ756KishzmjWDgAf0AW77QeBSuLbUXDQidstlS2h63BSRrlgm4bU97NPjdF5skHZFKQufqTqGt1UbTO8VV0OB7SqXAz7qCng=-rw" alt="logo">
+            <button id="online_courses">Online Courses</button>
+            <button id="certifications">Certification</button>
+            <button id="live_training">Live Training</button>
+            <button id="remote_working">Remote Working</button>
+            <div id="morediv">
+                <div id="more">
+                    More
+                <img id="moreimg" src="https://cdn4.iconfinder.com/data/icons/ios-edge-glyph-3/25/Down-Carrot-512.png" alt="">
+                </div>
+                <div id="moreappend"></div>
+            </div>
+            <div id="signinmorediv">
+                <div id="signinmore">
+                    More
+                <img id="signinmoreimg" src="https://cdn4.iconfinder.com/data/icons/ios-edge-glyph-3/25/Down-Carrot-512.png" alt="">
+                </div>
+                <div id="signinmoreappend"></div>
+            </div>
+        </div>
+        <div>
+            <button id="signin">Sign in</button>
+            <button id="register">Register</button>
+        </div>
+    </div>   
+    <div id="menudiv"></div>
+    <div id="aftermenudiv"></div>
+        <div id="sfilter"> 
+        <span id="cancel">X</span>
+        <div id="fill" class="filters">
+            <h3>CATEGORIES</h3>
+            <input class="check"  id="sdigital" type="checkbox" name="Digital Marketing" value="Digital Marketing">
+            <label for="Digital Marketing">Digital Marketing</label><br>
+            <input class="check" id="sCarrier" type="checkbox" name="Carrier development" value="Career development">
+            <label for="Carrier development">Carrier Development</label><br>
+            <input class="check" id="sdata" type="checkbox" name="Data" value="data">
+            <label for="Data">Data</label><br>
+        </div>
+        <div class="filters">
+            <h3>COURSE LENGTH</h3>
+            <input class="check" id="sunder2" type="checkbox" name="Under 2 hours" value="2">
+            <label for="Under 2 hours">Under 2 hours</label><br>
+            <input class="check" id="sbwtween2and10" type="checkbox" name="2-10 hours" value="">
+            <label for="2-10 hours">2-10 hours</label><br>
+            <input class="check" id="sbwtween11and20" type="checkbox" name="11-20 hours" value="11-20 hours">
+            <label for="11-20 hours">11-20 hours</label><br>
+            <input class="check" id="stwentyplus" type="checkbox" name="20+ hours" value="20">
+            <label for="20+ hours">20+ hours</label><br>
+        </div>
+        <div class="filters">
+            <h3>CERTIFICATION</h3>
+            <input class="check" id="scheck" type="checkbox" name="Free certificate" value="Free certificate">
+            <label for="Free certificate">Free certificate</label><br>
+            <input class="check" id="check" type="checkbox" name="Paid certificate" value="Paid certificate">
+            <label for="Paid certificate">Paid certificate</label><br>
+        </div>
+        <div class="filters">
+            <h3>COURSE DIFFICULTY</h3>
+            <input class="check" id="scheck" type="checkbox" name="Beginner" value="Beginner">
+            <label for="Beginner">Beginner</label><br>
+            <input class="check" id="scheck" type="checkbox" name="Intermediate" value="Intermediate">
+            <label for="Intermediate">Intermediate</label><br>
+            <input class="check" id="scheck" type="checkbox" name="Advanced" value="Advanced">
+            <label for="Advanced">Advanced</label><br>
+        </div>
+        <div class="filters">
+            <h3>COURSE PROVIDER</h3>
+            <input class="check" id="sgoogle" type="checkbox" name="Google" value="google">
+            <label for="Google">Google</label><br>
+            <input class="check" id="sads" type="checkbox" name="Applied Digital Skills" value="applied digital skills">
+            <label for="Applied Digital Skills">Applied Digital Skills</label><br>
+            <input class="check" id="check" type="checkbox" name="Coursera" value="Coursera">
+            <label for="Coursera">Coursera</label><br>
+            <input class="check" id="check" type="checkbox" name="FutureLearn" value="FutureLearn">
+            <label for="FutureLearn">FutureLearn</label><br>
+            <input class="check" id="check" type="checkbox" name="Google Cloud" value="Google Cloud">
+            <label for="Google Cloud">Google Cloud</label><br>
+            <input class="check" id="check" type="checkbox" name="Grasshopper" value="Grasshopper">
+            <label for="Grasshopper">Grasshopper</label><br>
+            <input class="check" id="check" type="checkbox" name="Great Learning" value="Great Learning">
+            <label for="Great Learning">Great Learning</label><br>
+            <input class="check" id="check" type="checkbox" name="Monash University" value="Monash University">
+            <label for="Monash University">Monash University</label><br>
+            <input class="check" id="check" type="checkbox" name="National Chiao Tung University" value="National Chiao Tung University">
+            <label for="National Chiao Tung University">National Chiao Tung University</label><br>
+            <input class="check" id="check" type="checkbox" name="OpenClassrooms" value="OpenClassrooms">
+            <label for="OpenClassrooms">OpenClassrooms</label><br>
+            <input class="check" id="check" type="checkbox" name="Simplilearn" value="Simplilearn">
+            <label for="Simplilearn">Simplilearn</label><br>
+            <input class="check" id="check" type="checkbox" name="Skillshop" value="Skillshop">
+            <label for="Skillshop">Skillshop</label><br>
+            <input class="check" id="check" type="checkbox" name="The Open University" value="The Open University">
+            <label for="The Open University">The Open University</label><br>
+            <input class="check" id="check" type="checkbox" name="Udacity" value="Udacity">
+            <label for="Udacity">Udacity</label><br>
+            <input class="check" id="check" type="checkbox" name="University of Auckland" value="University of Auckland">
+            <label for="University of Auckland">University of Auckland</label><br>
+            <input class="check" id="check" type="checkbox" name="University of Groningen" value="University of Groningen">
+            <label for="University of Groningen">University of Groningen</label><br>
+            <input class="check" id="check" type="checkbox" name="University of Helsinki" value="University of Helsinki">
+            <label for="University of Helsinki">University of Helsinki</label><br>
+        </div> 
+    </div>
     <div id="a">
        <div id="b">
             <div id="header">
@@ -111,6 +218,20 @@
                 </div>
              </div>
     </div>
+    <div id="footer"></div>
 </body>
 </html>
-<script src="index.js"></script>
+<script src="online.js"></script>
+<script src="./components/navscript.js"></script>
+<script type="module">
+    let navbar= document.getElementById("navbar");
+    let footer= document.getElementById("footer");
+    let menu= document.getElementById("menudiv");
+    let aftermenu= document.getElementById("aftermenudiv");
+
+    import {nav, menudiv, footerdata} from './components/navbar.js';
+
+    // navbar.innerHTML= nav();
+    footer.innerHTML= footerdata();
+    menu.innerHTML=  menudiv();
+</script>

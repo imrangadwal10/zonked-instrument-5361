@@ -1,6 +1,7 @@
 
 #a{
     width: 100%;
+   
     padding-bottom: 60px;
     background: #fff;
 }
@@ -42,7 +43,7 @@ body{
 }
 #header{
     width: 65%;
-    margin-top: 50px;
+    padding-top: 120px;
    
 }
 #header>p{
@@ -72,6 +73,30 @@ body{
     font-weight: 500;
     line-height: 2.6rem;
 }
+#mfilter{
+    height: 25px;
+    width: 20px;
+    display: none;
+}
+#sfilter{
+    background-color: white;
+    display: none;
+    color: black;
+    width: 250px;
+    margin-top: -50px;
+    height: 100%;
+    position: fixed;
+    display: none;
+    line-height: 50px;
+    padding-left: 15px;
+    padding-top: 60px;
+}
+
+
+
+
+
+
 #mid-sec>div{
      width: 80%;
      margin: auto;
@@ -95,6 +120,8 @@ body{
 #jobs>div:hover{
     transform: scale(1.03);
     transition: transform 0.4s;
+    
+   
 }
 #jobs>div{
     width: 100%;
@@ -102,6 +129,7 @@ body{
     font-family: Google Sans,Arial,sans-serif;
     height: 400px;
     cursor: pointer;
+    
 }
 
 #jobs>div>img{
@@ -245,13 +273,7 @@ hr{
     background-color: rgb(215, 213, 213);
     
   }
-   .btncontainer{
-    width: 150px;
-    margin-left: 628px;
-    font-size: 20px;
-    
-   
-  }
+
   .content:nth-child(1){
     display: block;
   }
@@ -284,5 +306,121 @@ hr{
   }
 
 
- 
+
+
+
+  @media screen and (min-width: 1439px) and (max-width:1536px ) {
+     .btncontainer{
+    width: 150px;
+    margin-left: 628px;
+    font-size: 20px;
+  }
+
+    #jobs{
+        width: 100%;
+        height: auto;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 400px;
+        gap: 27px;
+    }
+    .content>div>img{
+        width: 100%;
+    }
+    #jobs>div{
+        height: 400px;
+    }
+    #mfilter{
+        display: none;
+    }
+    #sfilter{
+        display: none;
+    }
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    #jobs{
+        width: 100%;
+        height: auto;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 400px;
+        gap: 27px;
+    }
+    .content>div>img{
+        width: 100%;
+    }
+    #jobs>div{
+        height: 400px;
+    }
+    #mfilter{
+        display: none;
+    }
+    
+    .btncontainer{
+        width: 150px;
+        margin-left: 555px;
+        font-size: 20px;
+      }
+  }
+
+  
+
+  @media screen and (min-width: 778px) and (max-width:1024px ) {
+  
+    #menudiv{
+        margin-top: -50px;
+    }
+    #header{
+        width: 100%;
+    }
+
+   #filter{
+       display: none;
+   }
+   #mfilter{
+    display: inline;
+    font-family: 'Material Icons';
+    font-size: 2rem;
+    line-height: 1;
+    margin-bottom: 100px;
+    margin-left: 70px;
+    cursor: pointer;
+  }
+  #mfilter>span>img{
+    width: 2.1%;
+    margin-top: 0px;
+  }
+  #sfilter{
+    margin-left: 15px;
+    overflow: auto;
+  }
+  #cancel{
+     margin-top: 50px;
+     display: flex;
+     justify-content: right;
+     margin-right: 30px;
+     font-size: 20px;
+  }
+  #results{
+    margin-left: 30px;
+  }
+  #mid-sec{
+    width: 100%;
+    background: #f7f7f7;
+    padding-top: 1px;
+}
+
+  #jobs{
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 400px;
+    gap: 27px;
+    margin-left: 50px;
+   
+}
+.btncontainer{
+    margin-left: 90px;
+  }
+
+  }
 

@@ -158,7 +158,7 @@ let data=[
 
 
 
-  display(data)
+display(data)
 function display(data){
   document.querySelector("#jobs").innerHTML=null;
   data.forEach((ele)=>{
@@ -191,3 +191,198 @@ function display(data){
 })
 
 }
+
+ let results=document.querySelector("#results")
+results.innerText=`Results: ${data.length} Courses`;
+
+        document.querySelector("#digital").addEventListener("change",digitalfilterFunc)
+
+        function digitalfilterFunc(e){
+         
+          if (e.target.checked) {
+            console.log("hi")
+           let checked= document.querySelector("#digital").value
+           let count=0; 
+           let a=data.filter(function(ele){
+            if(checked==ele.type){
+              count++;
+            } 
+              return checked==ele.type;      
+           })    
+           results.innerText=`Results: ${count} Courses`;
+           display(a)
+          }else if(!e.target.checked){
+            display(data)
+            results.innerText=`Results: ${data.length} Courses`;
+          }   
+        }
+
+        document.querySelector("#Carrier").addEventListener("change",carrierfilterFunc)
+
+        function carrierfilterFunc(e){
+          if (e.target.checked) {
+            console.log("hi")
+            let checked= document.querySelector("#Carrier").value
+            let count=0; 
+            let a=data.filter(function(ele){
+             if(checked==ele.type){
+               count++;
+             } 
+               return checked==ele.type;       
+            })    
+            results.innerText=`Results: ${count} Courses`;
+            display(a)
+           }else if(!e.target.checked){
+             display(data)
+             results.innerText=`Results: ${data.length} Courses`;
+           }
+           
+        }
+      
+        document.querySelector("#data").addEventListener("change",datafilterFunc)
+
+        function datafilterFunc(e){
+          if (e.target.checked) {
+            let checked= document.querySelector("#data").value
+            let count=0; 
+            let a=data.filter(function(ele){
+             if(checked==ele.type){
+               count++;
+             } 
+               return checked==ele.type;       
+            })    
+            results.innerText=`Results: ${count} Courses`;
+            display(a)
+           }else if(!e.target.checked){
+             display(data)
+             results.innerText=`Results: ${data.length} Courses`;
+           }
+        }
+
+
+        document.querySelector("#under2").addEventListener("change",undertwoFunc)
+
+
+        function undertwoFunc(e){
+          if (e.target.checked) {
+            let checked= document.querySelector("#under2").value
+            let count=0; 
+            let a=data.filter(function(ele){
+             if(ele.hours<checked){
+               count++;
+             } 
+               return ele.hours<checked;       
+            })    
+            results.innerText=`Results: ${count} Courses`;
+            display(a)
+           }else if(!e.target.checked){
+             display(data)
+             results.innerText=`Results: ${data.length} Courses`;
+           }
+        }
+        
+
+        document.querySelector("#bwtween2and10").addEventListener("change",betweenFunc)
+
+        function betweenFunc(e){
+          if (e.target.checked) {
+            let count=0; 
+            let a=data.filter(function(ele){
+             if(ele.hours>2 &&  ele.hours<=10){
+               count++;
+             } 
+               return (ele.hours>2 &&  ele.hours<=10)       
+            })    
+            results.innerText=`Results: ${count} Courses`;
+            display(a)
+           }else if(!e.target.checked){
+             display(data)
+             results.innerText=`Results: ${data.length} Courses`;
+           }
+        }
+        
+        document.querySelector("#bwtween11and20").addEventListener("change",betweenFunctwo)
+
+        function betweenFunctwo(e){
+          if (e.target.checked) {
+            let count=0; 
+            let a=data.filter(function(ele){
+             if(ele.hours>11 &&  ele.hours<20){
+               count++;
+             } 
+               return (ele.hours>11 &&  ele.hours<20)       
+            })    
+            results.innerText=`Results: ${count} Courses`;
+            display(a)
+           }else if(!e.target.checked){
+             display(data)
+             results.innerText=`Results: ${data.length} Courses`;
+           }
+        }
+
+        document.querySelector("#twentyplus").addEventListener("change",twentyplusFunctwo)
+
+        function twentyplusFunctwo(e){
+          if (e.target.checked) {
+            let checked= document.querySelector("#twentyplus").value
+            let count=0; 
+            let a=data.filter(function(ele){
+             if(ele.hours>checked){
+               count++;
+             } 
+               return (ele.hours>checked)       
+            })    
+            results.innerText=`Results: ${count} Courses`;
+            display(a)
+           }else if(!e.target.checked){
+             display(data)
+             results.innerText=`Results: ${data.length} Courses`;
+           }
+        }
+             
+        document.querySelector("#google").addEventListener("change",courseGFunc)
+
+        function courseGFunc(e){
+          if (e.target.checked) {
+            let checked= document.querySelector("#google").value
+            let count=0; 
+            let a=data.filter(function(ele){
+             if(ele.courseprovider==checked){
+               count++;
+             } 
+               return (ele.courseprovider==checked)       
+            })    
+            results.innerText=`Results: ${count} Courses`;
+            display(a)
+           }else if(!e.target.checked){
+             display(data)
+             results.innerText=`Results: ${data.length} Courses`;
+           }
+        }
+
+
+
+        document.querySelector("#ads").addEventListener("change",courseADSFunc)
+
+        function courseADSFunc(e){
+          if (e.target.checked) {
+            let checked= document.querySelector("#ads").value
+            let count=0; 
+            let a=data.filter(function(ele){
+             if(ele.courseprovider==checked){
+               count++;
+             } 
+               return (ele.courseprovider==checked)       
+            })    
+            results.innerText=`Results: ${count} Courses`;
+            display(a)
+           }else if(!e.target.checked){
+             display(data)
+             results.innerText=`Results: ${data.length} Courses`;
+           }
+        }
+        document.querySelector("#reset").addEventListener("click",fFunc)
+
+       function fFunc(){
+         window.location.href="online.html";
+        }
