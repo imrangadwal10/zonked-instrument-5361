@@ -16,6 +16,7 @@
             p.innerText= "Everyone. Gain today's most in-demand skills, whether you're growing your business, starting a career, or just want to try something new. We’ve got a range of courses and over 40 hours of learning available to help take you where you need to go. If you’re keen to come and learn, we’re keen to meet you!";
             ans1.append(p);
             ans1.style.display= "inline";
+            ans1.style.marginBottom= "30px";
             document.getElementById("q1down").style.transform= "rotate(180deg)";
         }else if(flagq1===true){
             flagq1= false;
@@ -34,7 +35,7 @@
             p.innerText= "Some of the courses are provided by us, and others from our partner universities or institutions.";
             ans2.append(p);
             ans2.style.display= "inline";
-            ans1.style.marginBottom= "30px";
+            ans2.style.marginBottom= "30px";
             document.getElementById("q2down").style.transform= "rotate(180deg)";
         }else if(flagq2===true){
             flagq2= false;
@@ -42,3 +43,21 @@
             document.getElementById("q2down").style.transform= "rotate(0deg)";
         }
     }
+
+
+
+
+
+
+    document.getElementById("findyourcourse").addEventListener("click", function(){
+        window.location.href= "./online.html";
+    });
+    document.getElementById("digital").addEventListener("click", function(){
+        window.location.href= "./online.html";
+    });
+    document.getElementById("career").addEventListener("click", function(){
+        window.location.href= "./online.html";
+    });
+    document.getElementById("data").addEventListener("click", function(){
+        window.location.href= "./online.html";
+    });

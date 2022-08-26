@@ -157,7 +157,7 @@
 }
 #bodyfour>div{
     border: 1px solid rgb(219, 216, 216);
-    padding: 18px;
+    padding: 15px;
     padding-bottom: 5px;
     display: flex;
     flex-direction: column;
@@ -168,7 +168,7 @@
 }
 #bodyfour>div:hover{
     border: none;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     transform: scale(1.014);
 }
 #bodyfour>div>div:nth-child(1)>p:nth-child(2){
@@ -376,36 +376,41 @@
         display: inline;
     }
     #divone>div>img{
-        width: 800px;
-        margin-left: -50px;
+        width: 100%;
+        margin: auto;
     }
     #divone>div{
         width: 90%;
     }
     #divtwo{
+        padding: 25px 0px;
+        width: 100%;
         margin: auto;
-        padding: 60px;
-        width: 95%;
         text-align: center;
-        margin-left: -20px;
     }
     #divtwo>div{
         text-align: center;
-        width: 100%;
-        margin-left: -10px;
+        width: 90%;
+        padding: 0px;
+        margin: auto;
+        margin-left: 5px;
     }
     #divtwo>div>p{
         font-size: 16px;
         margin-top: 5px;
         color: #424242;
     }
+    #divtwo>div>div>img{
+        width: 20%;
+    }
     #divtwo>div>div{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
+        width: 95%;
+        margin: auto;
         margin-top: 30px;
-        width: 100%;
-        margin-right: 10px;
+        padding: 0px;
     }
     #divthree{
         width: 100%;
@@ -438,30 +443,38 @@
         width: 90%;
         margin: auto;
         margin-top: 50px;
-        margin-right: 20px;
+        padding: 0px;
+        margin-bottom: 70px;
     }
     #headfour{
-        width: 100%;
+        width: 80%;
+        margin: auto;
     }
     #bodyfour{
         gap: 20px;
-        width: 100%;
+        width:100%;
+        margin: auto;
         grid-template-columns: repeat(1, 1fr);
     }
+    #divfive{
+        width: 100%;
+    }
     #divfive>div{
-        width: 70%;
+        width: 90%;
         margin: auto;
         margin-top: 50px;
+        margin-left: 5%;
         display: inline;
         line-height: 26px;
         font-size: 16px;
     }
     #divfive>div>div:nth-child(2){
-        width: 100%;
+        width: 90%;
+        margin: auto;
     }
     #divfive>div>div:nth-child(1){
-        width: 100%;
-        margin: 10px;
+        width: 90%;
+        margin: auto;
     }
     #divfive>div>div>img{
         width: 60%;

@@ -10,13 +10,13 @@
 </head>
 <body>
     <div id="navbar">
-        <div>
+        <div id="before">
             <img id="menu" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjd37EbTdJhO8Xzncd3nzoaf2MyfgD4FneMVqB5Mr4VUbZJ5H4vASkpFPruRq5PnkzplY&usqp=CAU" alt="">
             <img id="logo" src="https://lh3.googleusercontent.com/kvtXWUZ756KishzmjWDgAf0AW77QeBSuLbUXDQidstlS2h63BSRrlgm4bU97NPjdF5skHZFKQufqTqGt1UbTO8VV0OB7SqXAz7qCng=-rw" alt="logo">
-            <button id="online_courses">Online Courses</button>
+            <button id="onlinecourses">Online Courses</button>
             <button id="certifications">Certification</button>
-            <button id="live_training">Live Training</button>
-            <button id="remote_working">Remote Working</button>
+            <button id="livetraining">Live Training</button>
+            <button id="remoteworking">Remote Working</button>
             <div id="morediv">
                 <div id="more">
                     More
@@ -24,6 +24,14 @@
                 </div>
                 <div id="moreappend"></div>
             </div>
+        </div>
+        <div id="after">
+            <img id="aftermenu" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjd37EbTdJhO8Xzncd3nzoaf2MyfgD4FneMVqB5Mr4VUbZJ5H4vASkpFPruRq5PnkzplY&usqp=CAU" alt="">
+            <img id="logo" src="https://lh3.googleusercontent.com/kvtXWUZ756KishzmjWDgAf0AW77QeBSuLbUXDQidstlS2h63BSRrlgm4bU97NPjdF5skHZFKQufqTqGt1UbTO8VV0OB7SqXAz7qCng=-rw" alt="logo">
+            <button id="mylearningplan">My Learing Plan</button>
+            <button id="onlinecourses">Online Courses</button>
+            <button id="livetraining">Live Training</button>
+            <button id="remoteworking">Remote Working</button>
             <div id="signinmorediv">
                 <div id="signinmore">
                     More
@@ -32,17 +40,18 @@
                 <div id="signinmoreappend"></div>
             </div>
         </div>
-        <div>
+        <div id="right">
             <button id="signin">Sign in</button>
             <button id="register">Register</button>
         </div>
     </div>
     <div id="menudiv"></div>
+    <div id="aftermenudiv"></div>
     <div id="divone">
         <div>
             <h2>Learn the skills of the future</h2>
             <p>Accelerate your career or business with an online digital skills course in everything from marketing to coding and beyond.</p>
-            <button>Find cour course</button>
+            <button id="findyourcourse">Find your course</button>
         </div>
         <div>
             <img src="https://learndigital.withgoogle.com/static/digital-workshop/assets/imgs/homepage/img_digital-workshop_hero_xs.webp" alt="">
@@ -71,7 +80,7 @@
                     <p>Online sessions designed to help you develop skills in less than an hour. You can watch webinars live or register to take part in what is coming up.</p>
                 </div>
                 <div>
-                    <a href="">Explore our webinars <span style="font-size:larger; font-weight: bold">🡢</span></a>
+                    <a id="exploreourwebinars" href="./LiveTranining.html">Explore our webinars <span style="font-size:larger; font-weight: bold">🡢</span></a>
                 </div>
             </div>
         </div>
@@ -82,7 +91,7 @@
             <p>Discover courses in topics designed to help expand your career, business and horizons and to upgrade your skills for a new digital world.</p>
         </div>
         <div id="bodyfour">
-            <div>
+            <div id="digital">
                 <div>
                     <img src="https://lh3.googleusercontent.com/-0GVWZi0ZL7pLYB8XEJRfDrSC2dI6gT8RvubBrpw2BrIxtHkZY--Jn5FxXC4gp0s0fTJa4aV59o1F29qXNv_HBxcwW7zyyiDSMegNwBOEcgS_KU27Fiw=w64" alt="">
                     <p>Digital Marketing</p>
@@ -92,7 +101,7 @@
                 </div>
                 <div><p style="font-size:larger; font-weight: bold">🡢</p></div>
             </div>
-            <div>
+            <div id="career">
                 <div>
                     <img src="https://lh3.googleusercontent.com/yUtRjWMWqcVM2Z0MWD3KX1GCkqO585TTOGlDeu3yOLIqv4Zd_Ywa6Fh-YurdcjqfYS0nZrUGBI8V-24saZac4YOri5yuoApFaxJwJZ2IzWEDaWYMfA=w64" alt="">
                     <p>Career developement</p>
@@ -102,7 +111,7 @@
                 </div>
                 <div><p style="font-size:larger; font-weight: bold">🡢</p></div>
             </div>
-            <div>
+            <div id="data">
                 <div>
                     <img src="https://lh3.googleusercontent.com/XyURkvWIqHkfiP5yHRbJOHjUYNfEbVfqP_WoHllMs8n0su4vWyB9iwGca_UaqNRfIRLcPw-smh6Ra5XWl3R9Td-PhQcrK6KwsNiF8w8i2bIz0JcHLeP-=w64" alt="">
                     <p>Data</p>
@@ -151,12 +160,15 @@
     let navbar= document.getElementById("navbar");
     let footer= document.getElementById("footer");
     let menu= document.getElementById("menudiv");
+    let aftermenu= document.getElementById("aftermenudiv");
 
-    import {nav, menudiv, footerdata} from './components/navbar.js';
+    import {nav, menudiv, aftermenudiv, footerdata} from './components/navbar.js';
 
     // navbar.innerHTML= nav();
     footer.innerHTML= footerdata();
     menu.innerHTML=  menudiv();
+    aftermenu.innerHTML=  aftermenudiv();
+    // document.getElementById("after").style.display= "none";
 </script>
 
 <script src="./index.js"></script>
