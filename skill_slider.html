@@ -6,117 +6,90 @@
     .MultiCarousel { float: left; overflow: hidden; padding: 1px; width: 100%; position:relative; }
     .MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left; }
         .MultiCarousel .MultiCarousel-inner .item { float: left;}
-        
-
-        .MultiCarousel .MultiCarousel-inner .item > div { text-align: center; padding:10px; margin:10px; background:#f1f1f1; height: 400px;  color:#666;}
-
+        .MultiCarousel .MultiCarousel-inner .item > .pad15 { text-align: center; padding:10px; margin:10px;  height: 400px; width: 250px;  color:#666;}
     .MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute; border-radius:50%;top:calc(50% - 20px); }
     .MultiCarousel .leftLst { left:0; }
     .MultiCarousel .rightLst { right:0; }
+    .pad15{
+        background-color: none;
+    }
     .pad15>img{
         width: 60px;
         cursor: pointer;
     }
     .lead{
         cursor: pointer;
+        font-size: 15px;
+        color: gray;
     }
     
-        .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#ccc; }
+        .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none;  }
 </style>
 
 <div class="container">
 	<div class="row">
-		<div class="MultiCarousel" data-items="1,3,4,4" data-slide="1" id="MultiCarousel"  data-interval="1000">
-	
-
+		<div class="MultiCarousel" data-items="1,3,4,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
             <div class="MultiCarousel-inner">
                 <div class="item">
                     <div class="pad15">
                         <img src="https://lh3.googleusercontent.com/7nId5qqZMpCWyJRM7Ug8wiVAOaWOPlkIjnzHXHOdwZG2DA7jQ9ze8Mv4PnPiOCWYiZnKS6qwGffTR0gJuZlZb6_39ZExnkz7AAZfmL8" alt="">
-                        <p class="lead">The online opportunity</p>
-                        <p>2 lessons / 15min</p>
-                        <p>Intro to the Digital Garage</p>
-                        <p>your digital opportunity</p>
+                        <p class="lead">Analytics and data insights</p>
+                        
                     </div>
                 </div>
                 <div class="item">
                     <div class="pad15">
                         <img src="https://lh3.googleusercontent.com/8Wmxu9zJjs9gB-vvs9APmySY3l3kT_Be_dUn2NCpRYR8IeoSNADyes7--T_dWW_Lq9uudKZKwDhPQSVA8lLNjlvnx4Z3UDLcRac-Znw" alt="">
-                        <p class="lead">Your first steps in online success </p>
-                        <p>4 Lessons / 30 min</p>
-                        <p>Your online goal presence</p>
-                        <p>Building your online presence</p>
-                        <p>Marketing your online presence</p>
-                        <p>Analyse and adapt</p>
+                        <p class="lead">Business strategy </p>
+                       
                     </div>
                 </div>
                 
                 <div class="item">
                     <div class="pad15">
                         <img src="https://lh3.googleusercontent.com/BO5E8aQODXSUk8cvfSRBTv0p4KdjSIh525VZF-_7PwkwU_bY_0Fo1wOcH3F1wvHMCNd-E3u3Z83v2czcCHeVm5uFMQvRohn19z0N-w" alt="">
-                        <p class="lead">Build your web presence</p>
-                        <p>Choosing your online presence</p>
-                        <p>How website work</p>
-                        <p>Key website work</p>
-                        <p>Websites and your business goal </p>
-                        <p>Make your website easy to use</p>
-                        <p>Websites design do's and don'ts</p>
+                        <p class="lead">Content marketing</p>
+                        
                     </div>
                 </div>
                 <div class="item">
                     <div class="pad15">
                         <img src="https://lh3.googleusercontent.com/YmO_ZKke1ByfC4M_5fkGzwzZWSM4X7Ds6FLLVzEtthQsAjTg4owXENTM1s-qoBqJfEc9hzMNn8hflsnI7j3F0e-6oyPj5TrqJ3EPhw" alt="">
-                        <p class="lead">Plan your online business strategy</p>
-                        <p>5 Lessons / 30 min</p>
-                        <p>The benifit of online strategy</p>
-                        <p>Taking a business online</p>
+                        <p class="lead">Display adevertising</p>
+                        
                     
                     </div>
                 </div>
                 <div class="item">
                     <div class="pad15">
                         <img src="https://lh3.googleusercontent.com/ZcW8vDHKLws8pfv9TgJmtXZrWr5LxEVVq3oABMSBMgZxgH9k3uLV-ODRP_nEmEyOGFmOkSCj_vmDht2EG5UCpT65rRPpg3g_VkN4ng" alt="">
-                        <p class="lead">Get start with search</p>
-                        <p>6 Lessons / 45 min</p>
-                        <p>Search engines basics</p>
-                        <p>How search engins work </p>
-                        <p>How search engines see the web</p>
-                        <p>Organic search explained</p>
-                        <p>Paid search explained</p>
-                        <p>Google search console</p>
+                        <p class="lead">E-commerce</p>
+        
+                       
                     </div>
                 </div>
                 <div class="item">
                     <div class="pad15">
                         <img src="https://lh3.googleusercontent.com/KtL5gaA0B_MmlUdpetMctK8PzqUpm9FFgH9SkWb4124YVoXtWl7W6b1Lj7zsgOxrBhW2-HjUv8NkI85cEcBiGX3S3BIY5_13h8tTgw" alt="">
-                        <p class="lead">Get discovered with search</p>
-                        <p>5 Lessons / 35 min</p>
-                        <p>Intro to search engine optimisation(SEO)</p>
-                        <p>The importance of an SEO plan</p>
-                        <p>The SEO process</p>
-                        <p>How to choose keywords</p>
-                        <p>Setting realistic SEO goals</p>
+                        <p class="lead">Email marketing</p>
+                       
                     </div>
                 </div>
                 <div class="item">
                     <div class="pad15">
-                        <p class="lead">Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <p class="lead">Local marketing</p>
+                       
                     </div>
                 </div>
                 <div class="item">
                     <div class="pad15">
-                        <p class="lead"></p>
-                        <p>₹ 1</p>
-                        <p>₹ 6000</p>
-                        <p>50% off</p>
+                        <p class="lead">Mobile</p>
+                        
                     </div>
                 </div>
                 <div class="item">
                     <div class="pad15">
-                        <p class="lead"l</p>
+                        <p class="lead"l>SEM</p>
                         <p>₹ 1</p>
                         <p>₹ 6000</p>
                         <p>50% off</p>
@@ -125,56 +98,30 @@
                 </div>
                 <div class="item">
                     <div class="pad15">
-                        <p class="lead"></p>
-                        <p>₹ 1</p>
-                        <p>₹ 6000</p>
-                        <p>50% off</p>
+                        <p class="lead">SEO</p>
+                        
                     </div>
                 </div>
                 <div class="item">
                     <div class="pad15">
-                        <p class="lead"></p>
-                        <p>₹ 1</p>
-                        <p>₹ 6000</p>
-                        <p>50% off</p>
-                        <p>Under customer behavior</p>
-                        <p>How to stand out from the competition</p>
-                        <p>Using goals to improve buisness performance</p>
+                        <p class="lead">Social media</p>
+                       
                     </div>
                 </div>
                
                 <div class="item">
                     <div class="pad15">
-                        <p class="lead">Multi Item Carousel</p>
-                        <p>₹ 1</p>
-                        <p>₹ 6000</p>
-                        <p>50% off</p>
+                        <p class="lead">Video</p>
+                       
                     </div>
                 </div>
                 <div class="item">
                     <div class="pad15">
-                        <p class="lead">Multi Item Carousel</p>
-                        <p>₹ 1</p>
-                        <p>₹ 6000</p>
-                        <p>50% off</p>
+                        <p class="lead">Web optimisation</p>
+                       
                     </div>
                 </div>
-                <div class="item">
-                    <div class="pad15">
-                        <p class="lead">Multi Item Carousel</p>
-                        <p>₹ 1</p>
-                        <p>₹ 6000</p>
-                        <p>50% off</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad15">
-                        <p class="lead">Multi Item Carousel</p>
-                        <p>₹ 1</p>
-                        <p>₹ 6000</p>
-                        <p>50% off</p>
-                    </div>
-                </div>
+               
             </div>
             <button class="btn btn-primary leftLst"><</button>
             <button class="btn btn-primary rightLst">></button>
@@ -288,7 +235,5 @@
         ResCarousel(ell, Parent, slide);
     }
 
-});</script>
-
-
-
+});
+</script>
