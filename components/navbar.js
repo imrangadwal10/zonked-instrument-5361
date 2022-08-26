@@ -1,36 +1,64 @@
 let nav= () => {
-    return `<div>
-    <img id="menu" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjd37EbTdJhO8Xzncd3nzoaf2MyfgD4FneMVqB5Mr4VUbZJ5H4vASkpFPruRq5PnkzplY&usqp=CAU" alt="">
-    <img id="logo" src="https://lh3.googleusercontent.com/kvtXWUZ756KishzmjWDgAf0AW77QeBSuLbUXDQidstlS2h63BSRrlgm4bU97NPjdF5skHZFKQufqTqGt1UbTO8VV0OB7SqXAz7qCng=-rw" alt="logo">
-    <button id="online_courses">Online Courses</button>
-    <button id="certifications">Certification</button>
-    <button id="live_training">Live Training</button>
-    <button id="remote_working">Remote Working</button>
-    <div id="morediv">
-        <div id="more">
-            More
-        <img id="moreimg" src="https://cdn4.iconfinder.com/data/icons/ios-edge-glyph-3/25/Down-Carrot-512.png" alt="">
-        </div>
-        <div id="moreappend"></div>
-    </div>
-</div>
-<div>
-    <button id="signin">Sign in</button>
-    <button id="register">Register</button>
-</div>`;
+    return `<div id="before">
+                <img id="menu" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjd37EbTdJhO8Xzncd3nzoaf2MyfgD4FneMVqB5Mr4VUbZJ5H4vASkpFPruRq5PnkzplY&usqp=CAU" alt="">
+                <img id="logo" src="https://lh3.googleusercontent.com/kvtXWUZ756KishzmjWDgAf0AW77QeBSuLbUXDQidstlS2h63BSRrlgm4bU97NPjdF5skHZFKQufqTqGt1UbTO8VV0OB7SqXAz7qCng=-rw" alt="logo">
+                <button id="onlinecourses">Online Courses</button>
+                <button id="certifications">Certification</button>
+                <button id="livetraining">Live Training</button>
+                <button id="remoteworking">Remote Working</button>
+                <div id="morediv">
+                    <div id="more">
+                        More
+                        <img id="moreimg" src="https://cdn4.iconfinder.com/data/icons/ios-edge-glyph-3/25/Down-Carrot-512.png" alt="">
+                    </div>
+                    <div id="moreappend"></div>
+                </div>
+            </div>
+            <div id="after">
+                <img id="menu" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjd37EbTdJhO8Xzncd3nzoaf2MyfgD4FneMVqB5Mr4VUbZJ5H4vASkpFPruRq5PnkzplY&usqp=CAU" alt="">
+                <img id="logo" src="https://lh3.googleusercontent.com/kvtXWUZ756KishzmjWDgAf0AW77QeBSuLbUXDQidstlS2h63BSRrlgm4bU97NPjdF5skHZFKQufqTqGt1UbTO8VV0OB7SqXAz7qCng=-rw" alt="logo">
+                <button id="mylearningplan">My Learing Plan</button>
+                <button id="onlinecourses">Online Courses</button>
+                <button id="livetraining">Live Training</button>
+                <button id="remoteworking">Remote Working</button>
+                <div id="signinmorediv">
+                    <div id="signinmore">
+                        More
+                        <img id="signinmoreimg" src="https://cdn4.iconfinder.com/data/icons/ios-edge-glyph-3/25/Down-Carrot-512.png" alt="">
+                    </div>
+                    <div id="signinmoreappend"></div>
+                </div>
+            </div>
+            <div id="right">
+                <button id="signin">Sign in</button>
+                <button id="register">Register</button>
+            </div>`;
 }
 
 
 let menudiv= () => {
-    return `<a href="">Online Courses</a><br>
-    <a href="">Certification</a><br>
-    <a href="">Live Training</a><br>
+    return `<a href="./online.html">Online Courses</a><br>
+    <a href="./certificate.html">Certification</a><br>
+    <a href="./LiveTranining.html">Live Training</a><br>
     <a href="">Remote Working</a><br>
     <a href="">Tools & Resources</a><br>
     <a href="">Help & FAQs</a><br>
     <a href="">Feedback</a><br>
-    <a href="">Sign in</a><br>
-    <a href="">Register</a><br>`;
+    <a href="./signin.html">Sign in</a><br>
+    <a href="./register.html">Register</a><br>`;
+}
+
+let aftermenudiv= () => {
+    return `<a href="">My Larning Plan</a><br>
+    <a href="./online.html">Online Courses</a><br>
+    <a href="./LiveTranining.html">Live Training</a><br>
+    <a href="">Remote Working</a><br>
+    <a href="./certificate.html">Certification</a><br>
+    <a href="">Tools & Resources</a><br>
+    <a href="">Help & FAQs</a><br>
+    <a href="">Feedback</a><br>
+    <a href="">My Profile</a><br>
+    <button id="menusignout">Sign out</button><br>`;
 }
 
 
@@ -55,4 +83,4 @@ let footerdata= () => {
             </div>`;
 }
 
-export {nav, menudiv, footerdata};
+export {nav, menudiv, aftermenudiv, footerdata};
