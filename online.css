@@ -1,94 +1,95 @@
+
 #a{
-  width: 100%;
- 
-  padding-bottom: 60px;
-  background: #fff;
+    width: 100%;
+   
+    padding-bottom: 60px;
+    background: #fff;
 }
 #b{
-  width: 85%;
-  margin: auto;
+    width: 85%;
+    margin: auto;
 }
 html{
-  font-size: 62.5%;
+    font-size: 62.5%;
 }
 body{
-  color: rgba(0,0,0,.87);
-  font-size: 1.6rem;
-  font-weight: 400;
-  font-family: Roboto,Arial,sans-serif;
+    color: rgba(0,0,0,.87);
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: Roboto,Arial,sans-serif;
 }
 #header>h1{
-  color: #3c4043;
-  font-size: 40px;
-  font-weight: 400;
-  letter-spacing: .5px;
-  line-height: 5rem;
-  margin-bottom: 4px;
-  padding-bottom: 0;
-  font-style: normal;
-  font-variant-ligatures: normal;
-  font-variant-caps: normal;
-  font-variant-numeric: normal;
-  font-variant-east-asian: normal;
-  font-weight: normal;
-  font-stretch: normal;
-  line-height: 3.8rem;
-  font-family: "Google Sans", Arial, sans-serif;
-  color: #3c4043;
-  margin: 0;
-  padding-bottom: 8px;
-  text-rendering: optimizeLegibility;
-  
+    color: #3c4043;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    line-height: 5rem;
+    margin-bottom: 4px;
+    padding-bottom: 0;
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 3.8rem;
+    font-family: "Google Sans", Arial, sans-serif;
+    color: #3c4043;
+    margin: 0;
+    padding-bottom: 8px;
+    text-rendering: optimizeLegibility;
+    
 }
 #header{
-  width: 65%;
-  padding-top: 120px;
- 
+    width: 65%;
+    padding-top: 120px;
+   
 }
 #header>p{
-  font-size: 1.6rem;
-  margin-bottom: 2.1rem; 
-  font-weight: 300;
-  color: #80868b;
-  letter-spacing: normal;
-  font-size:  1.9rem;
-  line-height: 2.6rem;
-  font-family: "Google Sans", Arial, sans-serif;
-  display: block;
-  margin-top: -1px;
-  
+    font-size: 1.6rem;
+    margin-bottom: 2.1rem; 
+    font-weight: 300;
+    color: #80868b;
+    letter-spacing: normal;
+    font-size:  1.9rem;
+    line-height: 2.6rem;
+    font-family: "Google Sans", Arial, sans-serif;
+    display: block;
+    margin-top: -1px;
+    
 }
 
 #mid-sec{
-  width: 100%;
-  background: #f7f7f7;
-  padding-top: 1px;
+    width: 100%;
+    background: #f7f7f7;
+    padding-top: 1px;
 }
 #results{
-  color: #3c4043;
-  display: inline;
-  flex-basis: 100%;
-  font-size: 1.8rem;
-  font-weight: 500;
-  line-height: 2.6rem;
+    color: #3c4043;
+    display: inline;
+    flex-basis: 100%;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.6rem;
 }
 #mfilter{
-  height: 25px;
-  width: 20px;
-  display: none;
+    height: 25px;
+    width: 20px;
+    display: none;
 }
 #sfilter{
-  background-color: white;
-  display: none;
-  color: black;
-  width: 250px;
-  margin-top: -50px;
-  height: 100%;
-  position: fixed;
-  display: none;
-  line-height: 50px;
-  padding-left: 15px;
-  padding-top: 60px;
+    background-color: white;
+    display: none;
+    color: black;
+    width: 250px;
+    margin-top: -50px;
+    height: 100%;
+    position: fixed;
+    display: none;
+    line-height: 50px;
+    padding-left: 15px;
+    padding-top: 60px;
 }
 
 
@@ -97,330 +98,329 @@ body{
 
 
 #mid-sec>div{
-   width: 80%;
-   margin: auto;
-   margin-top: 50px;
+     width: 80%;
+     margin: auto;
+     margin-top: 50px;
 }
 #fj{
-  display: flex;
-  height: auto;
+    display: flex;
+    height: auto;
 }
 #filter{
- width: 20%;
+   width: 20%;
 }
 #jobs{
-  height: auto;
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows: auto;
-  gap: 27px;
-  font-family: Google Sans,Arial,sans-serif;  
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 27px;
+    font-family: Google Sans,Arial,sans-serif;  
 }
 #jobs>div:hover{
-  transform: scale(1.03);
-  transition: transform 0.4s;
-  
- 
+    transform: scale(1.03);
+    transition: transform 0.4s;
+    
+   
 }
 #jobs>div{
-  width: 100%;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  font-family: Google Sans,Arial,sans-serif;
-  height: 400px;
-  cursor: pointer;
-  
+    width: 100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    font-family: Google Sans,Arial,sans-serif;
+    height: 400px;
+    cursor: pointer;
+    
 }
 
 #jobs>div>img{
-  width: 100%;
-  height: 40px;
+    width: 100%;
+    height: 40px;
 }
 #jobs>div>p{
-  color: #5f6368;
-  display: block;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-weight: 300;
-  font-stretch: normal;
-  font-size: 1.4rem;
-  line-height: 1.9rem;
-  font-family: Roboto, Arial, Helvetica, serif;
+    color: #5f6368;
+    display: block;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-weight: 300;
+    font-stretch: normal;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    font-family: Roboto, Arial, Helvetica, serif;
 
 }
 #info{
-  width: 85%;
-  margin: auto;
+    width: 85%;
+    margin: auto;
 }
 #info>p{
-  font-size: 13px
+    font-size: 13px
 }
 #results{
-  margin-left: 274px;
+    margin-left: 274px;
 }
 .filters{
-  margin-top: 50px;
+    margin-top: 50px;
 }
 .filters>label{
-  font-family: Google Sans,Arial,sans-serif;
-  line-height: 3.5rem;
-  color: #80868b;
+    font-family: Google Sans,Arial,sans-serif;
+    line-height: 3.5rem;
+    color: #80868b;
 }
 .filters>h3{
-  font-weight: 500;
-  font-stretch: normal;
-  font-size: 1.4rem;
-  line-height: 2.6rem;
-  font-family: "Google Sans", Arial, sans-serif;
-  letter-spacing: normal;
-  margin-bottom: 32px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    font-family: "Google Sans", Arial, sans-serif;
+    letter-spacing: normal;
+    margin-bottom: 32px;
 }
 #fill{
-  margin-top: -20px;  
+    margin-top: -20px;  
 }
 .check{
-  display: inline-block;
-  height: 16px;
-  margin: auto;
-  margin-right: 8px;
-  position: relative;
-  vertical-align: middle;
-  white-space: nowrap;
-  width: 16px;
-  flex-shrink: 0;
-  height: 20px;
-  -webkit-margin-end: 22px;
-  margin-inline-end: 22px;
-  width: 20px;
-  line-height: 2.6rem;
-  cursor: pointer;
+    display: inline-block;
+    height: 16px;
+    margin: auto;
+    margin-right: 8px;
+    position: relative;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 16px;
+    flex-shrink: 0;
+    height: 20px;
+    -webkit-margin-end: 22px;
+    margin-inline-end: 22px;
+    width: 20px;
+    line-height: 2.6rem;
+    cursor: pointer;
 }
 #info>div{
-  display: flex;
+    display: flex;
 }
 #info>div>img{
- width: 7%;
- height: 7%;
- margin-top: 11px;
-
+   width: 7%;
+   height: 7%;
+   margin-top: 11px;
+  
 }
 #clock{
-  margin-left: 35px;
+    margin-left: 35px;
 }
 #info>div>p{
-  font-size: 13px;
-  margin-left: 5px;
+    font-size: 13px;
+    margin-left: 5px;
 }
 #results{
-  color: #3c4043;
-  display: inline;
-  flex-basis: 100%;
-  font-size: 1.8rem;
-  line-height: 5.6rem;
-  font-weight: bold;
+    color: #3c4043;
+    display: inline;
+    flex-basis: 100%;
+    font-size: 1.8rem;
+    line-height: 5.6rem;
+    font-weight: bold;
 }
 hr{
-border-top: 1px solid black;
-margin-top: 20px;
-margin-left: -30px;
-width: 250px;
+  border-top: 1px solid black;
+  margin-top: 20px;
+  margin-left: -30px;
+  width: 250px;
 }
 
 
 #reset{
-  display: flex;
-  width: 100%;
-  cursor: pointer;
+    display: flex;
+    width: 100%;
+    cursor: pointer;
 }
 #reset>img{
-  width: 7%;
-  height: 7%;
-  margin-right: 10px;
-  
+    width: 7%;
+    height: 7%;
+    margin-right: 10px;
+    
 }
 #reset>span{
-  color: #1a73e8;
-  font-size: 1.4rem;
-  font-weight: 500;
-  letter-spacing: .75px;
-  line-height: 2rem;
-  font-family: "Google Sans", Arial, sans-serif;
+    color: #1a73e8;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: .75px;
+    line-height: 2rem;
+    font-family: "Google Sans", Arial, sans-serif;
 }
 
 
 /* Load more Button */
 
 #jobs{
-  flex-wrap: wrap;
-}
-.content{
-  margin: 20px;
-  display: none;
-}
-.btncontainer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-button{
-  border: none;
-  display: block;
-  padding: 8px 10px 8px 10px;
-  margin-bottom: 20px ;
-  cursor: pointer;
-}
-button:hover{
-  background-color: rgb(215, 213, 213);
+    flex-wrap: wrap;
+  }
+  .content{
+    margin: 20px;
+    display: none;
+  }
+  .btncontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  button{
+    border: none;
+    display: block;
+    padding: 8px 10px 8px 10px;
+    margin-bottom: 20px ;
+    cursor: pointer;
+  }
+  button:hover{
+    background-color: rgb(215, 213, 213);
+    
+  }
+
+  .content:nth-child(1){
+    display: block;
+  }
+  .content:nth-child(2){
+    display: block;
+  }
+  .content:nth-child(3){
+    display: block;
+  }
+  .content:nth-child(4){
+    display: block;
+  }
+  .content:nth-child(5){
+    display: block;
+  }
+  .content:nth-child(6){
+    display: block;
+  }
+  .content:nth-child(7){
+    display: block;
+  }
+  .content:nth-child(8){
+    display: block;
+  }
+  .content:nth-child(9){
+    display: block;
+  }
+  .content:nth-child(10){
+    display: block;
+  }
+
+
+
+
+
+  @media screen and (min-width: 1439px) and (max-width:1536px ) {
+     .btncontainer{
+    width: 150px;
+    margin-left: 628px;
+    font-size: 20px;
+  }
+
+    #jobs{
+        width: 100%;
+        height: auto;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 400px;
+        gap: 27px;
+    }
+    .content>div>img{
+        width: 100%;
+    }
+    #jobs>div{
+        height: 400px;
+    }
+    #mfilter{
+        display: none;
+    }
+    #sfilter{
+        display: none;
+    }
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    #jobs{
+        width: 100%;
+        height: auto;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 400px;
+        gap: 27px;
+    }
+    .content>div>img{
+        width: 100%;
+    }
+    #jobs>div{
+        height: 400px;
+    }
+    #mfilter{
+        display: none;
+    }
+    
+    .btncontainer{
+        width: 150px;
+        margin-left: 555px;
+        font-size: 20px;
+      }
+  }
+
   
-}
 
-.content:nth-child(1){
-  display: block;
-}
-.content:nth-child(2){
-  display: block;
-}
-.content:nth-child(3){
-  display: block;
-}
-.content:nth-child(4){
-  display: block;
-}
-.content:nth-child(5){
-  display: block;
-}
-.content:nth-child(6){
-  display: block;
-}
-.content:nth-child(7){
-  display: block;
-}
-.content:nth-child(8){
-  display: block;
-}
-.content:nth-child(9){
-  display: block;
-}
-.content:nth-child(10){
-  display: block;
-}
+  @media screen and (min-width: 778px) and (max-width:1024px ) {
+  
+    #menudiv{
+        margin-top: -50px;
+    }
+    #header{
+        width: 100%;
+    }
 
-
-
-
-
-@media screen and (min-width: 1439px) and (max-width:1536px ) {
-   .btncontainer{
-  width: 150px;
-  margin-left: 628px;
-  font-size: 20px;
-}
-
-  #jobs{
-      width: 100%;
-      height: auto;
-      grid-template-columns: repeat(3,1fr);
-      grid-template-rows: 400px;
-      gap: 27px;
+   #filter{
+       display: none;
+   }
+   #mfilter{
+    display: inline;
+    font-family: 'Material Icons';
+    font-size: 2rem;
+    line-height: 1;
+    margin-bottom: 100px;
+    margin-left: 70px;
+    cursor: pointer;
   }
-  .content>div>img{
-      width: 100%;
-  }
-  #jobs>div{
-      height: 400px;
-  }
-  #mfilter{
-      display: none;
+  #mfilter>span>img{
+    width: 2.1%;
+    margin-top: 0px;
   }
   #sfilter{
-      display: none;
+    margin-left: 15px;
+    overflow: auto;
   }
+  #cancel{
+     margin-top: 50px;
+     display: flex;
+     justify-content: right;
+     margin-right: 30px;
+     font-size: 20px;
+  }
+  #results{
+    margin-left: 30px;
+  }
+  #mid-sec{
+    width: 100%;
+    background: #f7f7f7;
+    padding-top: 1px;
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
   #jobs{
-      width: 100%;
-      height: auto;
-      grid-template-columns: repeat(2,1fr);
-      grid-template-rows: 400px;
-      gap: 27px;
-  }
-  .content>div>img{
-      width: 100%;
-  }
-  #jobs>div{
-      height: 400px;
-  }
-  #mfilter{
-      display: none;
-  }
-  
-  .btncontainer{
-      width: 150px;
-      margin-left: 555px;
-      font-size: 20px;
-    }
-}
-
-
-
-@media screen and (min-width: 778px) and (max-width:1024px ) {
-
-  #menudiv{
-      margin-top: -50px;
-  }
-  #header{
-      width: 100%;
-  }
-
- #filter{
-     display: none;
- }
- #mfilter{
-  display: inline;
-  font-family: 'Material Icons';
-  font-size: 2rem;
-  line-height: 1;
-  margin-bottom: 100px;
-  margin-left: 70px;
-  cursor: pointer;
-}
-#mfilter>span>img{
-  width: 2.1%;
-  margin-top: 0px;
-}
-#sfilter{
-  margin-left: 15px;
-  overflow: auto;
-}
-#cancel{
-   margin-top: 50px;
-   display: flex;
-   justify-content: right;
-   margin-right: 30px;
-   font-size: 20px;
-}
-#results{
-  margin-left: 30px;
-}
-#mid-sec{
-  width: 100%;
-  background: #f7f7f7;
-  padding-top: 1px;
-}
-
-#jobs{
-  width: 100%;
-  height: auto;
-  grid-template-columns: repeat(2,1fr);
-  grid-template-rows: 400px;
-  gap: 27px;
-  margin-left: 50px;
- 
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 400px;
+    gap: 27px;
+    margin-left: 50px;
+   
 }
 .btncontainer{
-  margin-left: 90px;
-}
+    margin-left: 90px;
+  }
 
-}
- 
+  }
 

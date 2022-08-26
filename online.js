@@ -386,4 +386,3 @@ results.innerText=`Results: ${data.length} Courses`;
        function fFunc(){
          window.location.href="online.html";
         }
-        
