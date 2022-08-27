@@ -202,7 +202,6 @@
     line-height: 50px;
     padding-left: 15px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    z-index: 1;
 }
 #menudiv>a, #aftermenudiv>a{
     text-decoration: none;
@@ -218,7 +217,7 @@
     padding: 19px 0px;
 }
 #menudiv>a:nth-child(15){
-    padding: 10px 78px 10px 54px;
+    padding: 10px 78px 10px 64px;
     color: #1A73E8;
     margin: 0px 10px 0px 0px;
     font-size: 17px;
@@ -280,9 +279,10 @@
         display: inline;
     }
     #menudiv, #aftermenudiv{
-        width: 35%;
+        width: 25%;
         display: none;
-        margin-top: 58px;
+        margin-top: 60px;
+        padding-top: 10px;
     }
     #register{
         margin-right: 20px;
@@ -298,11 +298,11 @@
         display: flex;  
         flex-wrap: wrap;
     }
-    #footer>div:nth-child(1)>img:nth-child(1){
-        width: 100%;
-    }
     #footer>div:nth-child(1)>div{
         margin-top: 30px;
+    }
+    #footer>div:nth-child(1)>img:nth-child(1){
+        width:100%;
     }
     #footer>div:nth-child(2){
         justify-content: center;
@@ -315,14 +315,13 @@
         width: 35%;
         display: none;
         margin-top: 20px;
-        padding: 0px 20px;
     }
     #menudiv>a:nth-child(15){
-        padding: 1%;
+        padding: 5%;
         border-top: none;
     }
     #menudiv>a:nth-child(17){
-        padding: 4%;
+        padding: 7%;
     }
     #register, #signin{
         display: none;
