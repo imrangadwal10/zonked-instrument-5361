@@ -83,12 +83,12 @@
      }
      #course>div>h2{
       font-weight: lighter;
-       font-size: 22px;
+       font-size: 15px;
        color: rgb(160, 146, 146);
      }
      #course>div>h3{
       font-weight: lighter;
-       font-size: 20px;
+       font-size: 17px;
        color: grey;
      }
      .details{
@@ -113,11 +113,21 @@
      #why_certificate{
         display: flex;
         margin-left: 50px;
+
      }
+     
      .image{
-        width: 50%;
+        width: 70%;
         margin: auto;
      }
+     .image>img{
+        width: 70%;
+        margin-left: 100px;
+     }
+     #dropdown{
+      width: 70%;
+     }
+     
      #get_certificate>h2{
         text-align: center;
         font-size: 30px;
@@ -127,6 +137,7 @@
      }
      #get_certificate{
       margin-bottom: 80px;
+      
      }
      /* .use_of_certificate{
         width: 50%;
@@ -331,6 +342,89 @@
       width: 46px;
       padding: 10px;
      }
+
+
+
+
+     @media all and (min-width:768px) and (max-width:1024px){
+     #course{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      width: 100%;
+      margin-left: 70px;
+     }
+    
+     .details>h2{
+      width: 30%;
+     }
+     .features{
+      width: 30%;
+      
+     }
+     .about{
+      width: 600px;
+     }
+     .image>img{
+      width: 100%;
+     }
+
+     #dropdown{
+      width: 70%;
+     }
+     }
+    
+
+
+     @media all and (min-width:320px) and (max-width:768px){
+      body{
+         margin-left: 50px;
+      }
+     #course{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      width: 100%;
+      margin-left: 70px;
+     }
+     .details>h2{
+      width: 30%;
+     }
+     .features{
+      width: 30%;
+     }
+     .about>h3{
+      width: 100%;
+     }
+     .image>img{
+      width: 100%;
+     }
+
+     #dropdown{
+      width: 70%;
+     }
+     .about{
+      width: 400px;
+     }
+     #why_certificate{
+      display: grid;
+     }
+     #work{
+      display: grid;
+     }
+     .sub-work{
+      width: 100%;
+      margin-left: 50px;
+     }
+     #ways{
+      display: grid;
+      margin-left: 100px;
+      
+     }
+     .story{
+      display: grid;
+      margin-left: 50px;
+     }
+     }
+
 
 
     </style>
