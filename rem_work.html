@@ -6,8 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="rem_work.css">
+    <link rel="stylesheet" href="./components/navbar.css">
 </head>
 <body>
+    <div id="navbar">
+        <div id="before">
+            <img id="menu" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjd37EbTdJhO8Xzncd3nzoaf2MyfgD4FneMVqB5Mr4VUbZJ5H4vASkpFPruRq5PnkzplY&usqp=CAU" alt="">
+            <img id="logo" src="https://lh3.googleusercontent.com/kvtXWUZ756KishzmjWDgAf0AW77QeBSuLbUXDQidstlS2h63BSRrlgm4bU97NPjdF5skHZFKQufqTqGt1UbTO8VV0OB7SqXAz7qCng=-rw" alt="logo">
+            <button id="onlinecourses">Online Courses</button>
+            <button id="certifications">Certification</button>
+            <button id="livetraining">Live Training</button>
+            <button id="remoteworking">Remote Working</button>
+            <div id="morediv">
+                <div id="more">
+                    More
+                <img id="moreimg" src="https://cdn4.iconfinder.com/data/icons/ios-edge-glyph-3/25/Down-Carrot-512.png" alt="">
+                </div>
+                <div id="moreappend"></div>
+            </div>
+        </div>
+        <div id="after">
+            <img id="aftermenu" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjd37EbTdJhO8Xzncd3nzoaf2MyfgD4FneMVqB5Mr4VUbZJ5H4vASkpFPruRq5PnkzplY&usqp=CAU" alt="">
+            <img id="logo" src="https://lh3.googleusercontent.com/kvtXWUZ756KishzmjWDgAf0AW77QeBSuLbUXDQidstlS2h63BSRrlgm4bU97NPjdF5skHZFKQufqTqGt1UbTO8VV0OB7SqXAz7qCng=-rw" alt="logo">
+            <a href="" id="mylearningplan">My Learing Plan</a>
+            <a href="./online.html" id="onlinecourses1">Online Courses</a>
+            <a href="./LiveTranining.html" id="livetraining1">Live Training</a>
+            <a href="./rem_work.html" id="remoteworking1">Remote Working</a>
+            <div id="signinmorediv">
+                <div id="signinmore">
+                    More
+                <img id="signinmoreimg" src="https://cdn4.iconfinder.com/data/icons/ios-edge-glyph-3/25/Down-Carrot-512.png" alt="">
+                </div>
+                <div id="signinmoreappend"></div>
+            </div>
+        </div>
+        <div id="right">
+            <button id="signin">Sign in</button>
+            <button id="register">Register</button>
+        </div>
+    </div>
+    <div id="menudiv"></div>
+    <div id="aftermenudiv"></div>
     <div id="container">
     <div id="top">
         <h1>Helping you work, teach and learn from anywhere</h1>
@@ -34,9 +73,28 @@
 
 </div>
 
+<div id="footer"></div>
+
 </body>
 </html>
 <script src="./rem_work.js"></script>
+
+<script type="module">
+    let navbar= document.getElementById("navbar");
+    let footer= document.getElementById("footer");
+    let menu= document.getElementById("menudiv");
+    let aftermenu= document.getElementById("aftermenudiv");
+
+    import {nav, menudiv, aftermenudiv, footerdata} from './components/navbar.js';
+
+    // navbar.innerHTML= nav();
+    footer.innerHTML= footerdata();
+    menu.innerHTML=  menudiv();
+    aftermenu.innerHTML=  aftermenudiv();
+    // document.getElementById("after").style.display= "none";
+</script>
+
+<script src="./components/navscript.js"></script>
 
 
 

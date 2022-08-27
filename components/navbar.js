@@ -17,10 +17,10 @@ let nav= () => {
             <div id="after">
                 <img id="menu" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjd37EbTdJhO8Xzncd3nzoaf2MyfgD4FneMVqB5Mr4VUbZJ5H4vASkpFPruRq5PnkzplY&usqp=CAU" alt="">
                 <img id="logo" src="https://lh3.googleusercontent.com/kvtXWUZ756KishzmjWDgAf0AW77QeBSuLbUXDQidstlS2h63BSRrlgm4bU97NPjdF5skHZFKQufqTqGt1UbTO8VV0OB7SqXAz7qCng=-rw" alt="logo">
-                <button id="mylearningplan">My Learing Plan</button>
-                <button id="onlinecourses">Online Courses</button>
-                <button id="livetraining">Live Training</button>
-                <button id="remoteworking">Remote Working</button>
+                <a href="" id="mylearningplan">My Learing Plan</a>
+                <a href="./online.html" id="onlinecourses1">Online Courses</a>
+                <a href="./LiveTranining.html" id="livetraining1">Live Training</a>
+                <a href="./rem_work.html" id="remoteworking1">Remote Working</a>
                 <div id="signinmorediv">
                     <div id="signinmore">
                         More
@@ -42,7 +42,7 @@ let menudiv= () => {
     <a href="./LiveTranining.html">Live Training</a><br>
     <a href="./rem_work.html">Remote Working</a><br>
     <a href="./Tools&Resources.html">Tools & Resources</a><br>
-    <a href="">Help & FAQs</a><br>
+    <a href="./faq_help.html">Help & FAQs</a><br>
     <a href="">Feedback</a><br>
     <a href="./signin.html">Sign in</a><br>
     <a href="./register.html">Register</a><br>`;
@@ -55,7 +55,7 @@ let aftermenudiv= () => {
     <a href="./rem_work.html">Remote Working</a><br>
     <a href="./certificate.html">Certification</a><br>
     <a href="./Tools&Resources.html">Tools & Resources</a><br>
-    <a href="">Help & FAQs</a><br>
+    <a href="./faq_help.html">Help & FAQs</a><br>
     <a href="">Feedback</a><br>
     <a href="">My Profile</a><br>
     <button id="menusignout">Sign out</button><br>`;

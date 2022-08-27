@@ -30,6 +30,7 @@ if(dataa!==null){
 
             let div3= document.createElement("a"); 
             div3.innerText= "Help & FAQs";
+            div3.href= "./faq_help.html";
             div3.setAttribute("id", "help_and_FAQs")
 
             let div4= document.createElement("a");
@@ -81,6 +82,18 @@ if(dataa!==null){
             }
         }
 
+
+
+        // document.getElementById("onlinecourses1").addEventListener("click", function(){
+        //     window.location.href= "./online.html";
+        // });
+        // document.getElementById("remoteworking1").addEventListener("click", function(){
+        //     window.location.href= "./rem_work.html";
+        // });
+        // document.getElementById("livetraining1").addEventListener("click", function(){
+        //     window.location.href= "./LiveTranining.html";
+        // });
+
 }
 if(dataa===null){
 
@@ -108,6 +121,7 @@ if(dataa===null){
 
             let div2= document.createElement("a"); 
             div2.innerText= "Help & FAQs";
+            div2.href= "./faq_help.html";
             div2.setAttribute("id", "help_and_FAQs")
 
             let div3= document.createElement("a");
@@ -137,6 +151,22 @@ if(dataa===null){
                 menudiv.style.display= "none";
             }
         }
+
+
+
+        document.getElementById("onlinecourses").addEventListener("click", function(){
+            window.location.href= "./online.html";
+        });
+        document.getElementById("certifications").addEventListener("click", function(){
+            window.location.href= "./certificate.html";
+        });
+        document.getElementById("livetraining").addEventListener("click", function(){
+            window.location.href= "./LiveTranining.html";
+        });
+        document.getElementById("remoteworking").addEventListener("click", function(){
+            window.location.href= "./rem_work.html";
+        });
+    
 }
 
     document.getElementById("signin").addEventListener("click", function(){
@@ -151,15 +181,5 @@ if(dataa===null){
 
 
 
-    document.getElementById("onlinecourses").addEventListener("click", function(){
-        window.location.href= "./online.html";
-    });
-    document.getElementById("certifications").addEventListener("click", function(){
-        window.location.href= "./certificate.html";
-    });
-    document.getElementById("livetraining").addEventListener("click", function(){
-        window.location.href= "./LiveTranining.html";
-    });
-    document.getElementById("remoteworking").addEventListener("click", function(){
-        window.location.href= "./rem_work.html";
-    });
+
+

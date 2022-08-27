@@ -67,6 +67,7 @@ function ShowData(data){
         main_div1.id="box1"
 
         let main_div2 = document.createElement("div")
+        main_div2.setAttribute("id", "main_div2")
         
 
         let div1 = document.createElement("div")

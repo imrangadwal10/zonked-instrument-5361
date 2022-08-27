@@ -3,7 +3,7 @@
 #container{
     /* border:1px solid black; */
     margin:auto;
-    margin-top: 60px;
+    padding-top: 60px;
     width:68%;
     height:auto;
 }
@@ -121,7 +121,7 @@ p{
 
 
 
-img{
+#main_div2>img{
     height: 100%;
     width: 100%;
     filter: brightness(90%);

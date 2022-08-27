@@ -30,8 +30,9 @@
     align-items:center;
     gap: 28px;
 }
-#before>button, #after>button, #morediv{
+#before>button, #after>a, #morediv{
     border: none;
+    text-decoration: none;
     background: none;
     color: #5F6368;
     cursor: pointer;
