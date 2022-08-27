@@ -1,6 +1,7 @@
 #Top_box {
     width: 100%;
     height: 360px;
+    padding-top: 60px;
 }
 
 #Top_box h1 {
@@ -69,13 +70,13 @@
     height: auto;
     display: flex;
     background-color: #f5f5f5;
- 
+
 }
 
 #Mid_box>.slide {
     width: 19%;
     height: 100%;
-  
+
 }
 
 #Mid_box #story_box {
@@ -83,7 +84,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-   
+
 }
 
 #story_box>div {
@@ -109,6 +110,16 @@
     margin-left: 130px;
 }
 
+
+#story_box div h3 {
+    color: #3c4043;
+    font: 500 1.2rem/2.6rem Google Sans, Arial, sans-serif;
+    letter-spacing: .16px;
+    margin: 7px 0 10px;
+    max-height: 5.6rem;
+    overflow: hidden;
+}
+
 .slide {
     background-color: #f5f5f5;
 
@@ -127,6 +138,14 @@
     margin-right: 20px;
 
 }
+
+   span #checkBox{
+    height: 50px;
+    width: 18px;
+    margin-right: 20px;
+ } 
+
+
 
 .card-event__property-icon[_ngcontent-fan-c69] {
     color: #f9ab00;
@@ -150,16 +169,25 @@
 
 #story_box div h3 {
     margin-left: 30px;
-    letter-spacing: .16px;
-    overflow: hidden;
-    font-size: 23px;
+    /* letter-spacing: .16px; */
+    /* overflow: hidden; */
+    /* font-size: 23px; */
+
 }
 
 #story_box div p {
     margin-left: 30px;
     line-height: 1.5rem;
+    color: #5f6368;
 
 }
+
+/* color: #5f6368;
+font: 300 1.3rem/2.4rem Roboto,Arial,Helvetica,serif;
+margin-bottom: 10px;
+max-height: 9.6rem;
+overflow: hidden; */
+
 
 #story_box div span {
     margin-left: 30px;
@@ -180,23 +208,26 @@
     margin-left: 50px;
 }
 
-.filter span{
+.filter span {
     color: blue;
 }
 
-hr{
+hr {
     width: 80%;
     margin-left: 20px;
 }
 
-#loadMore{
-
-    padding: 65px 65px ;
+#loadMore {
+    padding: 65px 65px;
     background-color: #f5f5f5;
- 
 }
 
-#loadMore button{
+#loadMore button:hover {
+    background-color: #bbe0f3d2;
+}
+
+
+#loadMore button {
     margin-left: 54%;
     padding: 12px 18px;
     font-size: 15px;
@@ -204,6 +235,35 @@ hr{
     border: none;
 }
 
-#loadMore button:hover{
-    background-color:#bbe0f3d2;
+
+@media only screen and (min-width: 500px) and (max-width: 768px) {
+
+    #Top_box h1{
+        margin-left: 10px;
+    }
+
+    #Top_box p{
+        margin-left: 10px;
+    }
+
+    .search{
+      width: 90%;
+      margin-left: 10px;
+    }
+
+    #btn {
+        margin-left: 10px;
+    }
 }
+
+
+
+@media only screen and (min-width: 500px) and (max-width: 768px) {
+
+    #Mid_box #story_box {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+ 
+}
+

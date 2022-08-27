@@ -3,7 +3,7 @@
 #container{
     /* border:1px solid black; */
     margin:auto;
-    margin-top: 60px;
+    padding-top: 60px;
     width:68%;
     height:auto;
 }
@@ -30,7 +30,7 @@ h4{
     -webkit-font-smoothing: antialiased;
     font-weight: 400;
     font-size: 14px;
-    line-height: 25px;
+    
     color: #5f6368;
 }
 
@@ -108,6 +108,7 @@ h5{
     transform: scale(1);
     color: rgba(0,0,58,.87);
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+
 }
 p{
     font-family: Roboto,Arial,sans-serif;
@@ -120,7 +121,7 @@ p{
 
 
 
-img{
+#main_div2>img{
     height: 100%;
     width: 100%;
     filter: brightness(90%);

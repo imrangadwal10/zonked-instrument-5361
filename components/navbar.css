@@ -13,6 +13,7 @@
     margin-top: -5px;
     background-color: #FFFFFF;
     top: 0;
+    z-index: 1;
 }
 #navbar>div{
     display: flex;
@@ -24,12 +25,12 @@
     cursor: pointer;
     margin-left: 22px;
 }
-#navbar>div:nth-child(1){
+#before, #after{
     justify-content: space-between;
     align-items:center;
     gap: 28px;
 }
-#navbar>div:nth-child(1)>button, #morediv{
+#before>button, #after>button, #morediv{
     border: none;
     background: none;
     color: #5F6368;
@@ -40,8 +41,23 @@
     width: 15px;
     height: 13px;
 }
-#navbar>div:nth-child(2){
-    width: 30%;
+#signinmorediv{
+    border: none;
+    background: none;
+    color: #5F6368;
+    cursor: pointer;
+    font-size: 14px;
+}
+#signinmorediv>div>img{
+    width: 15px;
+    height: 13px;
+}
+#signinmorediv>div>img{
+    width: 15px;
+    height: 13px;
+}
+#right{
+    width: 25%;
     justify-content: flex-end;
 }
 #register{
@@ -128,20 +144,53 @@
     display: none;
 }
 #moreappend>div>a{
+    text-decoration: none;
     display: block;
     padding: 19px;
     padding-right: 80px;
+    color: #5F6368;
     cursor: pointer;
 }
 #moreappend>div>a:hover{
     background-color: #e6e1e1c2;
 }
-#menu{
+#signinmoreappend{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    font-size: 14px;
+    position: absolute;
+    cursor: pointer;
+    margin-top: 9px;
+    margin-left: -15px;
+    color: #5F6368;
+    background-color: white;
+    display: none;
+}
+#signinmoreappend>div>a, #signinmoreappend>div>button{
+    display: block;
+    padding: 19px;
+    color: #5F6368;
+    text-decoration: none;
+    padding-right: 80px;
+    cursor: pointer;
+}
+#signinmoreappend>div>button{
+    border: none;
+    outline: none;
+    font-size: 14.5px;
+    width: 100%;
+    color: #5F6368;
+    background-color: white;
+    text-align: left;
+}
+#signinmoreappend>div>a:hover, #signinmoreappend>div>button:hover{
+    background-color: #e6e1e1c2;
+}
+#menu, #aftermenu{
     height: 25px;
     width: 20px;
     display: none;
 }
-#menudiv{
+#menudiv, #aftermenudiv{
     background-color: white;
     display: none;
     color: black;
@@ -150,13 +199,21 @@
     margin-left: -7px;
     height: 100%;
     position: fixed;
-    display: none;
     line-height: 50px;
     padding-left: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    z-index: 1;
 }
-#menudiv>a{
+#menudiv>a, #aftermenudiv>a{
     text-decoration: none;
     color: #8f8e8e;
+    font-size: 16px;
+    padding: 19px 0px;
+}
+#aftermenudiv>button{
+    color: #8f8e8e;
+    border: none;
+    background-color: white;
     font-size: 16px;
     padding: 19px 0px;
 }
@@ -181,11 +238,15 @@
     margin: 0px 10px 0px 0px;
     cursor: pointer;
 }
+#after{
+    display: none;
+}
+
 @media all and (min-width:1024px) and (max-width:1320px){
-    #live_training, #remote_working{
+    #livetraining, #remoteworking{
         display: none;
     }
-    #menudiv{
+    #menudiv, #aftermenudiv{
         display: none;
     }
     #footer>div:nth-child(1){
@@ -197,7 +258,7 @@
     }
 }
 @media all and (min-width:768px) and (max-width:1023px){
-    #navbar>div:nth-child(1)>button, #navbar>div:nth-child(1)>div{
+    #before>button, #before>div, #after>button, #after>div{
         display: none;
     }
     #footer>div:nth-child(1){
@@ -207,40 +268,50 @@
     #footer>div:nth-child(1)>div{
         margin-top: 30px;
     }
-    #logo{
-        margin-left: 0px;
+    #navbar{
+        padding: 16px 0px;
+        width: 100%;
     }
-    #menu{
+    #logo{
+        margin: 20px 0px;
+    }
+    #menu, #aftermenu{
         margin-left: 15px;
         display: inline;
+    }
+    #menudiv, #aftermenudiv{
+        width: 35%;
+        display: none;
+        margin-top: 58px;
     }
     #register{
         margin-right: 20px;
     }
 }
 @media all and (min-width:235px) and (max-width:767px){
-    #navbar>div:nth-child(1)>button, #navbar>div:nth-child(1)>div{
+    #before>button, #before>div, #after>button, #after>div{
         display: none;
     }
-    #logo{
-        margin-left: 0px;
-    }#footer>div:nth-child(1){
+    #footer>div:nth-child(1){
+        width: 80%;
+        margin: auto;
         display: flex;  
         flex-wrap: wrap;
     }
     #footer>div:nth-child(1)>div{
         margin-top: 30px;
     }
-    #menu{
-        display: inline;
-        margin-left: 15px;
+    #footer>div:nth-child(2){
+        justify-content: center;
     }
-    #menudiv{
+    #menu, #aftermenu{
+        display: inline;
+        margin: 20px 15px;
+    }
+    #menudiv, #aftermenudiv{
         width: 35%;
         display: none;
-    }
-    #navbar{
-        padding: 19px;
+        margin-top: 20px;
     }
     #register, #signin{
         display: none;

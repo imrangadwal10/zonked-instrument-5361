@@ -11,6 +11,7 @@ let Data = [
     p4:"Learn to schedule, prepare for and run a successful meeting",
     p5:"4 tips for staying productive when working from home",
     p6:"6 tips for better video calls when working from home",
+    src:"digital_skill.html",
     img:"https://lh3.googleusercontent.com/WqqOQgvDCWBKyCCvRatA2g_N3D4VXtX5BEaul65DIzymFUApKJ0yBglbnLIVLbt8Xcuhc_YKpDlZYWLmSSzfvsTdztq8kJZ2EM7Vxg=s0-rj"
 },
 
@@ -23,6 +24,7 @@ let Data = [
     p4:"Achieve a balanced and flexible workforce",
     p5:"3 things we're considering as we rethink live events",
     p6:null,
+    src:"demo.html",
     img:"https://lh3.googleusercontent.com/Bn6Qh_YH0fE7D0neX2GqODs13hV7z0sA7CVYqyhJhXmrdbBalHDQQ15UmBUOVGgz1jwWUIuCE5yFlLn8BV_QNfAndplGSSUFhMNUAw=s0-rj"
 },
 { 
@@ -34,6 +36,7 @@ let Data = [
     p4:"Test yourself and others by creating a quiz in Google Forms",
     p5:"Use comments in Google Docs to give feedback on work",
     p6:null,
+    src:"demo.html",
     img:"https://lh3.googleusercontent.com/LahFn7ylv7oBbbi80t1lb0UivE5J1bYTOune-iApM_Mio8MRLdDu0V7c5lslq62wUcYX6qTRpFHnlujlMlAxfJEOEvFBshUeBGlsPv8=s0-rj"
 },
 { 
@@ -45,6 +48,7 @@ let Data = [
     p4:"Get organised with Google Drive",
     p5:null,
     p6:null,
+    src:"demo.html",
     img:"https://lh3.googleusercontent.com/ugYgbdlUWcBrW2QAL5JDwVk5FLkvvex72iYsHetgkHZf7alW6QMtQi4J9f_u2hHZSingvczC1QK6rcE7SRvep0cnJ2EPLgWNVGyM7w=s0-rj"
 },
 
@@ -62,7 +66,8 @@ function ShowData(data){
         let main_div1 = document.createElement("div")
         main_div1.id="box1"
 
-        let main_div2 = document.createElement("div")
+        let main_div2 = document.createElement("div");
+        main_div2.setAttribute("id", "main_div2");
         
 
         let div1 = document.createElement("div")
@@ -80,7 +85,7 @@ function ShowData(data){
         let p1 = document.createElement("p")
         p1.innerText = ele.p1
         div2.addEventListener('click', function(i) {
-            window.location.href = './work.html';
+            window.location.href = ele.src;
         }, false);
 
         let div3 = document.createElement("div")
