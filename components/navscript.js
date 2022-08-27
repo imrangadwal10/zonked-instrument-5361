@@ -70,7 +70,7 @@ if(dataa!==null){
                 flag1= true;
                 aftermenudiv.style.display= "inline";
                 document.getElementById("menusignout").addEventListener("click", function(){
-                    data= null;
+                    dataa= null;
                     alert("Successfully Signed Out.");
                     localStorage.setItem("signedin", JSON.stringify(dataa));
                     aftermenufunc();

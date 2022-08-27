@@ -258,7 +258,7 @@
     }
 }
 @media all and (min-width:768px) and (max-width:1023px){
-    #before>button, #before>div, #after>button, #after>div{
+    #before>button, #before>div, #after>a, #after>div{
         display: none;
     }
     #footer>div:nth-child(1){
@@ -279,18 +279,24 @@
         margin-left: 15px;
         display: inline;
     }
-    #menudiv, #aftermenudiv{
+    #menudiv{
+        width: 25%;
+        display: none;
+        margin-top: 20px;
+        padding-top: 10px;
+    }
+    #aftermenudiv{
         width: 25%;
         display: none;
         margin-top: 60px;
-        padding-top: 10px;
+        padding-top: 40px;
     }
     #register{
         margin-right: 20px;
     }
 }
 @media all and (min-width:235px) and (max-width:767px){
-    #before>button, #before>div, #after>button, #after>div{
+    #before>button, #before>div, #after>a, #after>div{
         display: none;
     }
     #footer>div:nth-child(1){
@@ -310,9 +316,14 @@
     }
     #menu, #aftermenu{
         display: inline;
-        margin: 20px 15px;
+        margin: 10px 15px;
     }
-    #menudiv, #aftermenudiv{
+    #menudiv{
+        width: 35%;
+        display: none;
+        margin-top: 0px;
+    }
+    #aftermenudiv{
         width: 35%;
         display: none;
         margin-top: 20px;
