@@ -341,7 +341,9 @@ details>summary{
     font-family: "Product Sans",Arial,Helvetica,sans-serif;
     color: #5f6368;
 }
-
+#ok1:hover{
+    cursor:pointer;
+}
 
     
 
