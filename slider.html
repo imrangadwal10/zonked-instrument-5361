@@ -6,9 +6,13 @@
     .MultiCarousel { float: left; overflow: hidden; padding: 1px; width: 100%; position:relative; }
     .MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left; }
         .MultiCarousel .MultiCarousel-inner .item { float: left;}
+
+        .MultiCarousel .MultiCarousel-inner .item > div { text-align: center; padding:10px; margin:10px; background:#f1f1f1; height: 350px;  color:#666;}
+
         
 
         .MultiCarousel .MultiCarousel-inner .item > div { text-align: center; padding:10px; margin:10px; background:#f1f1f1; height: 400px;  color:#666;}
+
 
     .MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute; border-radius:50%;top:calc(50% - 20px); }
     .MultiCarousel .leftLst { left:0; }
@@ -27,7 +31,6 @@
 <div class="container">
 	<div class="row">
 		<div class="MultiCarousel" data-items="1,3,4,4" data-slide="1" id="MultiCarousel"  data-interval="1000">
-	
 
             <div class="MultiCarousel-inner">
                 <div class="item">
@@ -288,7 +291,7 @@
         ResCarousel(ell, Parent, slide);
     }
 
-});</script>
 
-
+});
+</script>
 
