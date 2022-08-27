@@ -13,6 +13,7 @@
     margin-top: -5px;
     background-color: #FFFFFF;
     top: 0;
+    z-index: 1;
 }
 #navbar>div{
     display: flex;
@@ -143,9 +144,11 @@
     display: none;
 }
 #moreappend>div>a{
+    text-decoration: none;
     display: block;
     padding: 19px;
     padding-right: 80px;
+    color: #5F6368;
     cursor: pointer;
 }
 #moreappend>div>a:hover{
@@ -165,6 +168,8 @@
 #signinmoreappend>div>a, #signinmoreappend>div>button{
     display: block;
     padding: 19px;
+    color: #5F6368;
+    text-decoration: none;
     padding-right: 80px;
     cursor: pointer;
 }
@@ -197,6 +202,7 @@
     line-height: 50px;
     padding-left: 15px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    z-index: 1;
 }
 #menudiv>a, #aftermenudiv>a{
     text-decoration: none;
@@ -274,7 +280,7 @@
         display: inline;
     }
     #menudiv, #aftermenudiv{
-        width: 25%;
+        width: 35%;
         display: none;
         margin-top: 58px;
     }

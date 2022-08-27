@@ -6,6 +6,11 @@ body h3 {
 #top_section {
     width: 100%;
     height: 220px;
+    padding-top: 70px;
+}
+
+#tools{
+    padding-bottom: 70px;
 }
 
 #top_section h1 {

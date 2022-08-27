@@ -20,10 +20,12 @@ if(data!==null){
 
             let div1= document.createElement("a");
             div1.innerText= "Certification";
-            div1.setAttribute("id", "certification")
+            div1.href= "./certificate.html";
+            div1.setAttribute("id", "certification");
 
             let div2= document.createElement("a");
             div2.innerText= "Tools & Resources";
+            div2.href= "./Tools&Resources.html";
             div2.setAttribute("id", "tools_and_resources")
 
             let div3= document.createElement("a"); 
@@ -101,7 +103,8 @@ if(data===null){
 
             let div1= document.createElement("a");
             div1.innerText= "Tools & Resources";
-            div1.setAttribute("id", "tools_and_resources")
+            div1.href= "./Tools&Resources.html";
+            div1.setAttribute("id", "tools_and_resources");
 
             let div2= document.createElement("a"); 
             div2.innerText= "Help & FAQs";
@@ -148,8 +151,6 @@ if(data===null){
 
 
 
-
-
     document.getElementById("onlinecourses").addEventListener("click", function(){
         window.location.href= "./online.html";
     });
@@ -160,5 +161,5 @@ if(data===null){
         window.location.href= "./LiveTranining.html";
     });
     document.getElementById("remoteworking").addEventListener("click", function(){
-        window.location.href= "./index.html";
+        window.location.href= "./rem_work.html";
     });

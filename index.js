@@ -52,6 +52,9 @@
     document.getElementById("findyourcourse").addEventListener("click", function(){
         window.location.href= "./online.html";
     });
+
+
+    
     document.getElementById("digital").addEventListener("click", function(){
         window.location.href= "./online.html";
     });

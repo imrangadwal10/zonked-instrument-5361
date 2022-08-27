@@ -40,8 +40,8 @@ let menudiv= () => {
     return `<a href="./online.html">Online Courses</a><br>
     <a href="./certificate.html">Certification</a><br>
     <a href="./LiveTranining.html">Live Training</a><br>
-    <a href="">Remote Working</a><br>
-    <a href="">Tools & Resources</a><br>
+    <a href="./rem_work.html">Remote Working</a><br>
+    <a href="./Tools&Resources.html">Tools & Resources</a><br>
     <a href="">Help & FAQs</a><br>
     <a href="">Feedback</a><br>
     <a href="./signin.html">Sign in</a><br>
@@ -52,9 +52,9 @@ let aftermenudiv= () => {
     return `<a href="">My Larning Plan</a><br>
     <a href="./online.html">Online Courses</a><br>
     <a href="./LiveTranining.html">Live Training</a><br>
-    <a href="">Remote Working</a><br>
+    <a href="./rem_work.html">Remote Working</a><br>
     <a href="./certificate.html">Certification</a><br>
-    <a href="">Tools & Resources</a><br>
+    <a href="./Tools&Resources.html">Tools & Resources</a><br>
     <a href="">Help & FAQs</a><br>
     <a href="">Feedback</a><br>
     <a href="">My Profile</a><br>
