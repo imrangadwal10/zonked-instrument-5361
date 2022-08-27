@@ -1,0 +1,131 @@
+
+
+#container{
+    /* border:1px solid black; */
+    margin:auto;
+    padding-top: 60px;
+    width:68%;
+    height:auto;
+}
+
+
+
+
+#top{
+    /* border:1px solid black; */
+    margin:auto;
+    margin-bottom: 60px;
+    width:65%;
+    text-align: center;
+}
+h1{
+    font-family: Roboto,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(0,0,58,.87);
+    font-weight: 400;
+}
+
+h4{
+    font-family: Roboto,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    font-size: 14px;
+    
+    color: #5f6368;
+}
+
+
+
+
+
+#middle{
+    /* border:1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    gap:30px;
+    height:40px;
+    color: rgba(0,0,0,.87);
+    -webkit-tap-highlight-color: rgba(6, 6, 6, 0);
+    background-color: #f7f7f7;
+}
+
+h6{
+    font-family: Roboto,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+}
+h6:hover{
+    cursor: pointer;
+    transform: scale(1);
+    color:blue;
+}
+
+
+
+
+
+#seperate{
+    margin-bottom: 75px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+#bottom>div{
+    /* border:1px solid black; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+h2{
+    font-family: Roboto,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(0,0,58,.87);
+    font-weight: 400;
+    translate: 20px;
+    font-size: 30px;
+}
+#div0{
+    width: 78%;
+}
+h5{
+    font-family: Roboto,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(0,0,58,.87);
+    font-weight: 400;
+    translate: 20px;
+}
+#upper_box~div{
+    /* border:1px solid teal; */
+    display: flex;
+    align-items: center;
+    height:76px;
+    background-color: #f7f7f7;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+#upper_box~div:hover{
+    cursor: pointer;
+    transform: scale(1);
+    color: rgba(0,0,58,.87);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+
+}
+p{
+    font-family: Roboto,Arial,sans-serif;
+    font-size: 14px;
+    translate: 15px;
+    color:rgba(66, 66, 242, 0.897);
+    font-weight: 400;
+}
+
+
+
+
+#main_div2>img{
+    height: 100%;
+    width: 100%;
+    filter: brightness(90%);
+}
+
+
+

@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate</title>
+    <link rel="stylesheet" href="./components/navbar.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+      $( function ()
+      {
+          $( "#dropdown" ).load( "dropdown.html" );
+      } );
+      $( function ()
+      {
+          $( "#FAQs-dropdown" ).load( "dropdown-FAQs.html" );
+      } );
+
+      $( function ()
+      {
+          $( "#slider" ).load( "slider.html" );
+      } );
+      $( function ()
+      {
+          $( "#skill_slider" ).load( "skill_slider.html" );
+      } );
+  </script>
+  
+    <style>
+        body{
+            width: 95%;
+            margin: auto;
+        }
+        #main{
+            display: flex;
+            width: 90%;
+            margin: auto;
+            padding-top: 140px;
+        }
+     #certificate{
+        height: 600px;
+
+     }
+     #certificate>img{
+        height: 33px;
+        margin-bottom: 50px;
+     }
+     #certificate>span{
+        font-size: 22px;
+        background-color: #FBBC05;
+        padding-right: 15px;
+        border-radius: 0 -10px;
+        position: absolute;
+        
+        
+     }
+     #certificate>h1{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin:0 0 30px 0;
+        font-size: 40px;
+        font-weight: lighter;
+     }
+     #certificate>h3{
+        color: grey;
+        margin-bottom: 30px;
+        font-weight: lighter;
+     }
+     #certificate>a{
+        
+        background-color: #1A73E8;
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+       
+        
+     }
+     #course{
+        display: flex;
+        width: 90%;
+        margin: auto;
+       margin-top: -60px;
+     }
+     #course>div>h2{
+      font-weight: lighter;
+       font-size: 22px;
+       color: rgb(160, 146, 146);
+     }
+     #course>div>h3{
+      font-weight: lighter;
+       font-size: 20px;
+       color: grey;
+     }
+     .details{
+       width: 25%;
+          
+       
+     }
+     .num{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+     }
+     .features{
+        width: 25%;
+     }
+     .about{
+        width: 40%;
+     }
+     .about>h1{
+      font-weight: lighter;
+     }
+     #why_certificate{
+        display: flex;
+        margin-left: 50px;
+     }
+     .image{
+        width: 50%;
+        margin: auto;
+     }
+     #get_certificate>h2{
+        text-align: center;
+        font-size: 30px;
+        font-weight: lighter;
+        margin: 70px;
+
+     }
+     #get_certificate{
+      margin-bottom: 80px;
+     }
+     /* .use_of_certificate{
+        width: 50%;
+        margin: auto;
+     }
+     .use_of_certificate>input{
+        display: none;
+     }
+
+     .use_of_certificate>label{
+        font-size: 25px;
+        color: rgba(20, 15, 15, 0.772);
+        cursor: pointer;
+        position: relative;
+        
+    
+     }
+     .use_of_certificate>label::after{
+        content: " ";
+        border-width: 15px;
+        border-style: solid;
+        border-color: transparent transparent transparent rgba(0, 0, 0, 0.505);
+        height: 0;
+        font-size: 0;
+        position: absolute;
+        left: 300%;
+        transition: 0.5s;
+        transform-origin: 5px center;
+        
+        
+
+     } */
+
+     /* .use_of_certificate>div{
+       
+        font-size: 25px;
+        color: gray;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+        margin: 15px;
+     }
+     .use_of_certificate>input:checked ~ label:after{
+        transform: rotate(450deg);
+     }
+     .use_of_certificate>input:checked ~ div{
+        padding-top: 10px;
+       
+        opacity: 1;
+        height: auto;
+     } */
+     #how{
+      margin-left: 80px;
+     }
+     #how>h2{
+      text-align: center;
+      font-size: 35px;
+        font-weight:500;
+        margin: 40px;
+      
+       
+     }
+     #work{
+      display: flex;
+      margin: auto;
+      justify-content: center;
+     }
+     .sub-work{
+      width: 30%;
+      margin: auto;
+     }
+     .sub-work>div{
+      width: 70px;
+      height: 70px;
+      background-color:#1A73E8;
+      color: white;
+      border-radius: 50%;
+      font-size: 40px;
+      
+      
+      margin: auto;
+      margin-bottom: 50px;
+      
+     }
+     .sub-work>div>p{
+      text-align: center;
+      
+     }
+     .sub-work>h3{
+        font-weight: lighter;
+        font-style: normal;
+     }
+     .mod>h2{
+      text-align: center;
+      padding: 50px;
+     }
+     #ways{
+      display: flex;
+      margin-left: 300px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+     }
+     .ways1{
+      width: 50%;
+      margin-left: 80px;
+    margin-top: 80px;
+    
+     }
+     .ways1>p{
+      color: grey;
+      font-size: 16px;
+     }
+     .ways1>h4{
+      color: #1A73E8;
+     }
+     .mod>h4{
+      
+      padding-top: -20px;
+      color: grey;
+      text-align: center;
+      margin-bottom: 70px;
+     }
+     .story{
+      margin-left: 100px;
+      display: flex;
+     }
+     .ways2{
+      margin-left: 70px;
+     }
+     .ways2>p{
+      color: grey;
+      font-size: 16px;
+     }
+     #FAQs-dropdown{
+      margin-bottom: 90px;
+     }
+     .faqs-btn{
+      text-align: center;
+     }
+     .faqs-btn>a{
+      background-color:#E8EAED;
+        color: black;
+        padding: 16px;
+        font-size: 16px;
+        text-decoration: none;
+        margin-top: 30px;
+        margin-bottom: 35px;
+        
+     }
+     .start{
+      text-align: center;
+      padding: 50px;
+     }
+    
+       
+     .str_btn{
+      margin-top: 40px;
+     }
+     .str_btn>a{
+       margin-top: 25px;
+       padding: 15px 25px;
+      background-color: #1A73E8;
+        color: white;
+        
+        text-decoration: none;
+     }
+     .grow{
+      padding: 4%;
+      margin-left: 5%;
+      font-weight: 500;
+     }
+     .a{
+        color: grey;
+        font-size: 22px;
+     }
+     .b{
+      color: grey;
+        font-size: 28px;
+     }
+     #bottem{
+      display: flex;
+      border-top: 1px solid #dfdddd;
+      border-bottom: 1px solid #dbd7d7;
+     }
+     .privacy{
+      margin-left: 25%;
+      padding: 4%;
+     
+      
+     }
+     .privacy>select{
+      margin-left: 40px;
+     }
+     #cont{
+      margin-right: 25px;
+     }
+     #share{
+      text-align: end;
+      padding: 4%;
+     
+     }
+     #share>a>img{
+      width: 46px;
+      padding: 10px;
+     }
+
+
+    </style>
+</head>
+<body>
+   <div id="navbar">
+      <div id="before">
+          <img id="menu" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjd37EbTdJhO8Xzncd3nzoaf2MyfgD4FneMVqB5Mr4VUbZJ5H4vASkpFPruRq5PnkzplY&usqp=CAU" alt="">
+          <img id="logo" src="https://lh3.googleusercontent.com/kvtXWUZ756KishzmjWDgAf0AW77QeBSuLbUXDQidstlS2h63BSRrlgm4bU97NPjdF5skHZFKQufqTqGt1UbTO8VV0OB7SqXAz7qCng=-rw" alt="logo">
+          <button id="onlinecourses">Online Courses</button>
+          <button id="certifications">Certification</button>
+          <button id="livetraining">Live Training</button>
+          <button id="remoteworking">Remote Working</button>
+          <div id="morediv">
+              <div id="more">
+                  More
+              <img id="moreimg" src="https://cdn4.iconfinder.com/data/icons/ios-edge-glyph-3/25/Down-Carrot-512.png" alt="">
+              </div>
+              <div id="moreappend"></div>
+          </div>
+      </div>
+      <div id="after">
+          <img id="aftermenu" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjd37EbTdJhO8Xzncd3nzoaf2MyfgD4FneMVqB5Mr4VUbZJ5H4vASkpFPruRq5PnkzplY&usqp=CAU" alt="">
+          <img id="logo" src="https://lh3.googleusercontent.com/kvtXWUZ756KishzmjWDgAf0AW77QeBSuLbUXDQidstlS2h63BSRrlgm4bU97NPjdF5skHZFKQufqTqGt1UbTO8VV0OB7SqXAz7qCng=-rw" alt="logo">
+          <button id="mylearningplan">My Learing Plan</button>
+          <button id="onlinecourses">Online Courses</button>
+          <button id="livetraining">Live Training</button>
+          <button id="remoteworking">Remote Working</button>
+          <div id="signinmorediv">
+              <div id="signinmore">
+                  More
+              <img id="signinmoreimg" src="https://cdn4.iconfinder.com/data/icons/ios-edge-glyph-3/25/Down-Carrot-512.png" alt="">
+              </div>
+              <div id="signinmoreappend"></div>
+          </div>
+      </div>
+      <div id="right">
+          <button id="signin">Sign in</button>
+          <button id="register">Register</button>
+      </div>
+  </div>
+  <div id="menudiv"></div>
+  <div id="aftermenudiv"></div>
+<div id="main">
+    <div id="certificate">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnu1SDzN3bz0ENn3b33OpQ70qswENRMTU5kw&usqp=CAU" alt="">
+      <span>INCLUDES CERTIFICATE</span>
+      <h1>Fundamentals of digital marketing</h1>
+      <h3>Learn the fundamentals of digital marketing to help your business or career.</h3>
+       <img src="https://lh3.googleusercontent.com/AOdoe_LSe2wBSRwQDyWtxaDNd_CSePZYf4-3_DnxkiTIJhYe9h6tCX6NTWUAVZ7Hhs7WtaGEAyQgarf2y6A0Z6IkA2MGGDd6HfdylMU" alt="">
+       <img src="https://lh3.googleusercontent.com/6XAPotSz8eU23ifrhBBs2UCl48VhAs_8VkU1y6dfcj_geDq4JTsNxhE28rdKyMLbje8K2kcY3wN2uIloix6KEfMnNcMV9oW24HU_Cw" alt="">
+       <img src="https://lh3.googleusercontent.com/CZXtwALfzAOA9JuGXXCYPxAVNxOre0VCg8JXZUXbiakHXB7dazKiCmM1l7SVIbMcl0N1AuJKiuzzB0jtVLDjq18Iy9NP4DiX-UUyC7I" alt=""> 
+       <br>
+       <a href="">Start course</a>
+    </div>
+    <div>
+        <img src="https://lh3.googleusercontent.com/JwZ74w1xLAO0n24knlxgL9HZJo3NTN3V44YrtyXZvivX4sHYmiyBs89KIxTOIYTR4IDgFq-VFx6L3gutEpDkpicLzl96KKSYbVh3f08" alt="sd">
+    </div>
+</div>   
+<div  id="course">
+         <div class="details">
+          <h2>COURSE DETAIL</h2>
+          <h3>Modules:26</h3>
+          <h3>Hours:40</h3>
+          <h3>Beginner</h3>
+          <h3>Free</h3>
+         </div>
+        <div class="features">
+          <h2>COURSE FEATURES</h2>
+          <h3>Self-paced learning</h3>
+          <h3>Video tutorials</h3>
+          <h3>Unlimited access</h3>
+          <h3>Recognised certificate</h3>
+        </div>
+        <div class="about">
+         <h1>About this course</h2>
+         <h3>Master the basics of digital marketing with our free course accredited by Interactive Advertising Bureau Europe and The Open University. There are 26 modules to explore, all created by Google trainers, packed full of practical exercises and real-world examples to help you turn knowledge into action.</h3>
+        </div>
+ </div>
+ <div id="get_certificate">
+    <h2>why get a certificate?</h2>
+    <div id="why_certificate">
+       <div class="image">
+        <img src="https://lh3.googleusercontent.com/REeaiWLcRwALbGrxPRgHgZey_feHsjPUYHlmTdMqZgAVSnnvza_sJkyTm861GoUnRI16lXueSCQTToGLur-_jvaZVMka4wSoRMs2eA" alt="">
+       </div>
+       <div id="dropdown"></div>
+    
+      <!-- <div class="use_of_certificate">
+        <input type="checkbox" id="trigger">
+       <label for="trigger">Improve your CV</label>
+        <div>Getting a certificate shows employers that you have a clear understanding of the core concepts of digital marketing. You can also add the qualification to your CV, and easily upload it to your LinkedIn profile.</div>
+        <label for="trigger">Find a job</label>
+        <div>Being awarded a certificate shows you have strong digital skills and that you're motivated to learn: two essential qualities in the workplace. Demonstrating these qualities can help improve your chances of finding the job you want.</div>
+        <label for="trigger">Develop your career</label>
+        <div>Improving your digital knowledge can help you find a job, get promoted, or start a whole new career.</div>
+      </div> -->
+    </div>
+</div>  
+<div id="how">
+   <h2>How it works</h2>
+   <div id="work">
+    <div class="sub-work">
+      <div class="num"><p>1</p></div>
+      <h3>Learn new skills with our bite-sized video tutorials, then test your knowledge with a quick quiz.</h3>
+    </div> 
+    <div class="sub-work">
+      <div class="num"><p>2</p></div>
+      <h3>Pass the final 40-question exam and get certified.</h3>
+    </div>
+    <div class="sub-work">
+       <div class="num"><p>3</p></div>
+      <h3>Download and showcase your new qualification on LinkedIn and your CV.</h3>
+    </div>
+   </div>
+
+</div> 
+<div>
+   <div class="mod">
+      <h2>Modules(26)</h2>
+        <div id="slider"></div>
+   </div>
+</div>
+<div class="mod">
+   <h2>Skills you'll learn</h2>
+   <div id="skill_slider"></div>
+</div>
+<div class="mod">
+   <h2>Other ways to learn</h2>
+   <div id="ways">
+      <img src="https://lh3.googleusercontent.com/sGXULxVILX3ubQTqLXS5z0YlZY5wTlKkpkjQpS-aHIXjZXaawuleIq3QP3SHDyDIbvthfBdTfJ8chzZf0u6IQEYd0E-_dUswETir4LeFjywux_uNxEM=w600-rw" alt="">
+      <div class="ways1">
+         <h3>Looking for more advanced training?</h3>
+         <p>Google Career Certificates offers a maore in-debth and hands-on training about digital Marketing and E-commerce</p>
+         <h4>Learn more</h4>
+      </div>
+   </div>
+
+</div> 
+<div>
+   <div class="mod">
+      <h2>Success stories</h2>
+      <h4>Over 300,000 people have already gained this qualification, and are using it to develop and improve their careers.</h4>
+   </div>
+   <div class="story">
+      <div >
+         <a href="https://youtu.be/T2d0X_X12ZM" target="_blank"><img src="https://lh3.googleusercontent.com/dIPoNCvQgsurSpqTfnnI7_yBZhgSwBHKmiCFpQLPWKtY7mHRSYlqID6fCkj25LMrjFcMMnuWyR6YATjjer25zLpxhm9O5tcmkNI0rw" alt=""></a>
+      </div>
+      <div class="ways2">
+         <h3>Sylwia's story</h3>
+         <p>Meet Sylwia from icube.pl. After building her skills and getting certified, she was promoted to Content Marketing Manager and has since helped her agency expand into multiple markets.</p>
+         <br><br>
+         <h3>Darko's story</h3>
+         <p>After completing the training courses, Darko Dujič, CEO of Slovenian e-commerce platform Ceneje.si, was so impressed that he encouraged everyone in the company to follow suit.</p>
+      </div>
+   </div>
+</div>
+<div class="mod">
+<h2>FAQs</h2>
+</div>
+<div id="FAQs-dropdown"></div>
+<div class="faqs-btn">
+   <a href="https://learndigital.withgoogle.com/digitalgarage/faqs">See all FAQs</a>
+</div>
+<div class="start">
+   <h3>Start today and get a certificate in Fundamentals of Digital Marketing</h3>
+   <div class="str_btn">
+      <a href="">Start course</a>
+   </div>
+   
+</div>
+<div id="bottem">
+   <div class="grow">
+      <span class="a">A</span>
+      <span class="b">Grow with Google</span>
+      <span class="a">PROGRAMME</span>
+   </div>
+   <div class="privacy">
+      <a href="https://policies.google.com/privacy?hl=en&gl=uk">Privacy & Terms</a>
+      <select name="" id="cont">
+         <option value="">United Kingdom</option>
+         <option value="">Africa</option>
+         <option value="">USA</option>
+         <option value="">India</option>
+         <option value="">Canada</option>
+         <option value="">China</option>
+         <option value="">Japam</option>
+      </select>
+   </div>
+</div>
+<div id="share">
+   <span>Share</span>
+   <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flearndigital.withgoogle.com%2Fdigitalgarage"><img src="https://lh3.googleusercontent.com/sw4rOkreSopt2DcXlOCH9HPwHm7pPgeBsO8DFqWnnVPifC4473ztUcLCT49kDnDj5c-ClaRCOQKmBvbrzqICFq7yNgcqq8-byBV0aw=-rw" alt=""></a>
+   <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fg.co%2FDigitalGarage&text=Free%20Training%20Course%20From%20Google"><img src="https://lh3.googleusercontent.com/O73TcAUC463DfCnA87ap5gw7uWPW2R6owA8p-jcmHYJuysd2BVT_W-1PzUdxk_kbzjQ-OHuTt4W1i3N4hi_KtCkBifUtpZFPlz4R=-rw" alt=""></a>
+   <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Flearndigital.withgoogle.com%2Fdigitalgarage"><img src="https://lh3.googleusercontent.com/2PFoqNpZ5xu9JK1u_CRR0aiYqGb0K6cOKkzmS2Ux0rucddJgNeMwsniGFMzQWopCdNK9rBzq73N0188sAtK_UFpgUHPPgz2XyDG5=-rw" alt=""></a>
+</div>
+
+
+
+
+
+   
+    
+</body>
+</html>
+
+
+
+<script type="module">
+   let navbar= document.getElementById("navbar");
+   let footer= document.getElementById("footer");
+   let menu= document.getElementById("menudiv");
+   let aftermenu= document.getElementById("aftermenudiv");
+
+   import {nav, menudiv, aftermenudiv, footerdata} from './components/navbar.js';
+
+   // navbar.innerHTML= nav();
+   footer.innerHTML= footerdata();
+   menu.innerHTML=  menudiv();
+   aftermenu.innerHTML=  aftermenudiv();
+   // document.getElementById("after").style.display= "none";
+</script>
+
+<script src="./components/navscript.js"></script>

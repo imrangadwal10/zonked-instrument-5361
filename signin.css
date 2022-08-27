@@ -1,0 +1,170 @@
+*{
+    font-family: sans-serif;
+}
+#signinbody{
+    background-color: #f8f9fa;
+    margin-top: 0px;
+    padding-top: 68px;
+    padding-bottom: 150px;
+}
+#signinbody>div:nth-child(1){
+    background-color: white;
+    padding: 3px 0px 50px 0px;
+}
+#signinbody>div:nth-child(1)>h1{
+    margin-left: 12.5%;
+    font-weight: lighter;
+    font-size: 42px;
+    color: #3C4043;
+}
+#signinbody>div:nth-child(1)>p{
+    margin-left: 12.5%;
+    font-weight: lighter;
+    font-size: 16px;
+    color: #5F6368;
+    margin-top: -15px;
+}
+#signinbody>div:nth-child(2){
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    width: 58%;
+    margin: auto;
+    background-color: white;
+    padding: 40px 0px 20px 30px;
+    margin-top: -30px;
+}
+#signinbody>div:nth-child(2)>button{
+    color:#757575;
+    padding: 11px 22px;
+    font-size: 15px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    background: white;
+    border: none;
+    margin-top: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+#registerbody>div:nth-child(2)>label{
+    font-size: 12px;
+    color: #bb1a1a;
+}
+#signinbody>div:nth-child(2)>button>img{
+    width: 17px;
+}
+#signinbody>div:nth-child(2)>h3{
+    color: #3C4043;
+    font-size: 20px;
+    font-weight: lighter;
+    margin-top: 40px;
+    margin-bottom: 55px;
+    margin-top: 40px;
+}
+#signinemail{
+    width: 70%;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(201, 197, 197);
+}
+#signinemail:hover{
+    border-bottom: 1.1px solid black;
+}
+#signinpassword{
+    margin-top: 45px;
+    padding: 5px;
+    outline: none;
+    width: 70%;
+    border: none;
+    border-bottom: 1px solid rgb(201, 197, 197);
+}
+#signinpassword:hover{
+    border-bottom: 1.1px solid black;
+}
+#signinpassword+img{
+    width: 18px;
+    height: 18px;
+    margin-left: -30px;
+    opacity: 0.8;
+}
+#signinbody>div:nth-child(2)>div{
+    padding: 0px;
+    width: 71%;
+    margin: 20px 0px 50px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#signinbody>div:nth-child(2)>p{
+    font-size: 12px;
+    color: #757575;
+}
+#signinbody>div:nth-child(2)>div>a{
+    text-decoration: none;
+    color: #1A73E8;
+    font-size: 17px;
+}
+#signinbody>div:nth-child(2)>div>button{
+    border: none;
+    color: #FFFFFF;
+    background-color: #1A73E8;
+    font-size: 17px;
+    padding: 12px 28px;
+    opacity: 0.3;
+}
+
+
+#signinbody>div:nth-child(3){
+    padding: 15px 0px;
+    padding-left: 27px;
+    width: 58%;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+#signinbody>div:nth-child(3)>p{
+    font-size: 14px;
+    color: #757575;
+}
+#signinbody>div:nth-child(3)>p>a{
+    text-decoration: none;
+    color: #1A73E8;
+    font-size: 15px;
+}
+#registerbsigninbodyody>div:nth-child(3)>button{
+    border: none;
+    color: #FFFFFF;
+    background-color: #1A73E8;
+    opacity: 0.3;
+    font-size: 17px;
+    padding: 0px 25px;
+}
+
+
+@media all and (min-width:235px) and (max-width:767px){
+    #signinbody>div:nth-child(2)>button{
+        color:#757575;
+        padding: 13px 30px;
+        font-size: 17px;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        background: white;
+        border: none;
+        margin-top: 5px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    }
+    #signinbody>div:nth-child(2)>button>img{
+        width: 17px;
+    }
+    #signinbody>div:nth-child(2)>h3{
+        color: #3C4043;
+        font-size: 20px;
+        font-weight: lighter;
+        margin-top: 40px;
+        margin-bottom: 55px;
+        margin-top: 40px;
+    }
+}

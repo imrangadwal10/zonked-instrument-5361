@@ -1,0 +1,227 @@
+body h3 {
+    font-size: 20px;
+
+}
+
+#top_section {
+    width: 100%;
+    height: 220px;
+    padding-top: 70px;
+}
+
+#tools{
+    padding-bottom: 70px;
+}
+
+#top_section h1 {
+    margin-left: 35px;
+    font-size: 3rem;
+    line-height: 5.4rem;
+    color: #3c4043;
+    font-size: 2.8rem;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 3.8rem;
+    margin-bottom: 8px;
+    padding-bottom: 0;
+}
+
+#top_section p {
+    margin-left: 35px;
+    color: #9aa0a6;
+    font-size: 1.2rem;
+    letter-spacing: .06px;
+    letter-spacing: normal;
+    line-height: 2rem;
+}
+
+#Mid_section {
+    height: auto;
+    background-color: #f5f5f5;
+
+}
+
+#Mid_section #tools {
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#tools div {
+    height: 150px;
+    background-color: #fff;
+}
+
+#Mid_section .title {
+    padding: 20px 20px;
+}
+
+.title h2 {
+    margin-left: 20%;
+    color: #616161;
+    font: 300 -55.2rem/3.2rem Roboto Slab, Georgia, sans-serif;
+}
+
+
+#tools .tool div {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+}
+
+
+.tool div img {
+    padding: 30px 0px 0px 30px;
+}
+
+.tool div h3 {
+    margin: 30px 45px 0px 0px;
+    font-size: 21px;
+    font-weight: 400;
+    color: #343434;
+
+}
+
+.span span {
+    margin: 20px 0px 0px 65%;
+    font-size: 1.2rem;
+    line-height: 2.6rem;
+    color: blue;
+}
+
+span a {
+    color: blue;
+}
+
+.span span a {
+    text-decoration: none;
+}
+
+.tool .div1 h3 {
+    margin: 30px 42% 0px 0px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #343434;
+
+}
+
+.tool .div1 img {
+    padding: 30px 0px 0px 30px;
+}
+
+
+.tool .div2 h3 {
+    margin: 30px 70% 0px 0px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #343434;
+}
+
+.tool .div3 h3 {
+    margin: 30px 52% 0px 0px;
+    font-size: 20px;
+}
+
+.tool .div4 h3 {
+    margin: 30px 45% 0px 0px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #343434;
+}
+
+.tool .div5 h3 {
+    margin: 30px 5% 0px 10px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #343434;
+}
+
+.tool .div6 h3 {
+    margin: 30px 20% 0px 0px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #343434;
+}
+
+.tool .div7 h3 {
+    margin: 30px 43% 0px 0px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #343434;
+}
+
+.tool .div8 h3 {
+    margin: 30px 50% 0px 0px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #343434;
+}
+
+.tool .div9 h3 {
+    margin: 30px 33% 0px 0px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #343434;
+}
+
+.tool .div10 h3 {
+    margin: 30px 55% 0px 0px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #343434;
+}
+
+.tool .div11 h3 {
+    margin: 30px 45% 0px 0px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #343434;
+}
+
+.tool .div12 h3 {
+    margin: 30px 10% 0px 0px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #343434;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 768px) {
+    #top_section {
+        width: 50%;
+    }
+
+    #top_section h1 {
+        color: #3c4043;
+        font-size: 2.0rem;
+        font-weight: 400;
+        letter-spacing: normal;
+        /* line-height: 3.8rem; */
+
+    }
+
+    #top_section p {
+        /* font-size: 18px;
+        margin-top: 0px;
+        margin-left: 40px; */
+        color: #9aa0a6;
+        font-size: 1.2rem;
+        letter-spacing: .06px;
+        letter-spacing: normal;
+        line-height: 2rem;
+        max-width: 360px;
+
+    }
+
+}
+
+
+@media only screen and (min-width: 500px) and (max-width: 768px) {
+    #Mid_section #tools {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
