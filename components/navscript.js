@@ -1,5 +1,5 @@
-let data= JSON.parse(localStorage.getItem("signedin")) || null;
-if(data!==null){
+let dataa= JSON.parse(localStorage.getItem("signedin")) || null;
+if(dataa!==null){
 
     document.getElementById("before").style.display= "none";
     document.getElementById("after").style.display= "flex";
@@ -44,9 +44,9 @@ if(data!==null){
             div6.innerText= "Sign out";
             div6.setAttribute("id", "signout");
             div6.addEventListener("click", function(){
-                data= null;
+                dataa= null;
                 alert("Successfully Signed Out.");
-                localStorage.setItem("signedin", JSON.stringify(data));
+                localStorage.setItem("signedin", JSON.stringify(dataa));
                 window.location.assign("index.html");
             })
 
@@ -71,7 +71,7 @@ if(data!==null){
                 document.getElementById("menusignout").addEventListener("click", function(){
                     data= null;
                     alert("Successfully Signed Out.");
-                    localStorage.setItem("signedin", JSON.stringify(data));
+                    localStorage.setItem("signedin", JSON.stringify(dataa));
                     aftermenufunc();
                     window.location.assign("index.html");
                 })
@@ -82,7 +82,7 @@ if(data!==null){
         }
 
 }
-if(data===null){
+if(dataa===null){
 
     document.getElementById("before").style.display= "flex";
     document.getElementById("after").style.display= "none";
