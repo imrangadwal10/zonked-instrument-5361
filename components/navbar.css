@@ -298,6 +298,9 @@
         display: flex;  
         flex-wrap: wrap;
     }
+    #footer>div:nth-child(1)>img:nth-child(1){
+        width: 100%;
+    }
     #footer>div:nth-child(1)>div{
         margin-top: 30px;
     }
@@ -312,6 +315,14 @@
         width: 35%;
         display: none;
         margin-top: 20px;
+        padding: 0px 20px;
+    }
+    #menudiv>a:nth-child(15){
+        padding: 1%;
+        border-top: none;
+    }
+    #menudiv>a:nth-child(17){
+        padding: 4%;
     }
     #register, #signin{
         display: none;
