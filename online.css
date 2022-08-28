@@ -261,7 +261,7 @@ hr{
     justify-content: center;
     align-items: center;
   }
-  button{
+  .btn{
     border: none;
     display: block;
     padding: 8px 10px 8px 10px;
