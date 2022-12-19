@@ -7,4 +7,5 @@ Everyone. Gain today's most in-demand skills, whether you're growing your busine
 
 
 # Netlify Link:
-https://lively-smakager-758bbc.netlify.app/
+ [Netlify](https://lively-smakager-758bbc.netlify.app/)
+
